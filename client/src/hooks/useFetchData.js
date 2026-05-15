@@ -8,7 +8,7 @@ export const useFetchData = (endpoint) => {
   useEffect(() => {
     setLoading(true);
 
-    fetch(`http://localhost:5000/api/${endpoint}`)
+    fetch(`/api/${endpoint}`)
       .then((res) => {
         if (!res.ok) throw new Error("Gagal ambil data");
         return res.json();
