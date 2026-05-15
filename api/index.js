@@ -4,13 +4,13 @@ const express = require("express");
 const cors = require("cors");
 const serverless = require("serverless-http");
 
-const connectDB = require("./db");
+const connectDB = require("./db.js");
 
-const HeroBanner = require("./models/herobanners");
-const CategoryProduct = require("./models/categoryproducts");
-const SubCategoryProduct = require("./models/subcategoryproduct");
+const HeroBanner = require("./models/herobanners.js");
+const CategoryProduct = require("./models/categoryproducts.js");
+const SubCategoryProduct = require("./models/subcategoryproduct.js");
 const Product = require("./models/product");
-const BrandValue = require("./models/brandvalue");
+const BrandValue = require("./models/brandvalue.js");
 
 const app = express();
 
