@@ -12,7 +12,13 @@ const app = express();
 
 connectDB();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://marmara-cakes.vercel.app", "http://localhost:5173"],
+    methods: ["GET", "POST"],
+    credentials: true,
+  }),
+);
 app.use(express.json());
 
 // HeroBanner
