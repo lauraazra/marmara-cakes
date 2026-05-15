@@ -1,20 +1,15 @@
 require("dotenv").config();
-
 const express = require("express");
 const cors = require("cors");
-const serverless = require("serverless-http");
-
-const connectDB = require("./db.js");
-
-const HeroBanner = require("./models/herobanners.js");
-const CategoryProduct = require("./models/categoryproducts.js");
-const SubCategoryProduct = require("./models/subcategoryproduct.js");
+const connectDB = require("./db");
+const HeroBanner = require("./models/herobanners");
+const CategoryProduct = require("./models/categoryproducts");
+const SubCategoryProduct = require("./models/subcategoryproduct");
 const Product = require("./models/product");
-const BrandValue = require("./models/brandvalue.js");
+const BrandValue = require("./models/brandvalue");
 
 const app = express();
 
-// Connect Database
 connectDB();
 
 app.use(
@@ -24,67 +19,47 @@ app.use(
     credentials: true,
   }),
 );
-
 app.use(express.json());
 
-// =========================
-// Hero Banner
-// =========================
+// HeroBanner
 app.get("/api/banner", async (req, res) => {
   try {
     const banners = await HeroBanner.find();
     res.status(200).json(banners);
   } catch (err) {
-    res.status(500).json({
-      error: "Failed to get banner data",
-      message: err.message,
-    });
+    res.status(500).json({ error: "Failed to get data: " + err.message });
   }
 });
 
-// =========================
-// Brand Value
-// =========================
+// Brand Values
 app.get("/api/brandvalue", async (req, res) => {
   try {
     const brandvalue = await BrandValue.find();
     res.status(200).json(brandvalue);
   } catch (err) {
-    res.status(500).json({
-      error: "Failed to get brand value data",
-      message: err.message,
-    });
+    res.status(500).json({ error: "Failed to get data: " + err.message });
   }
 });
 
-// =========================
 // Category Product
-// =========================
 app.get("/api/categoryproduct", async (req, res) => {
   try {
     const categoryproduct = await CategoryProduct.find();
     res.status(200).json(categoryproduct);
   } catch (err) {
-    res.status(500).json({
-      error: "Failed to get category product data",
-      message: err.message,
-    });
+    res.status(500).json({ error: "Failed to get data: " + err.message });
   }
 });
 
-// =========================
-// Product by Slug
-// =========================
+// Product
 app.get("/api/product/:slug", async (req, res) => {
   try {
     const { slug } = req.params;
 
-    const category = await CategoryProduct.findOne({ slug });
+    const category = await CategoryProduct.findOne({ slug: slug });
 
     if (!category) {
-      return res.status(404).json({
-        message: "Kategori tidak ditemukan",
-      });
+      return res.status(404).json({ message: "Kategori tidak ditemukan" });
     }
 
     const subCategories = await SubCategoryProduct.find({
@@ -95,34 +70,19 @@ app.get("/api/product/:slug", async (req, res) => {
       categoryproductId: category._id,
     });
 
-    res.status(200).json({
+    res.json({
       category,
       subCategories,
       products,
     });
   } catch (err) {
-    res.status(500).json({
-      message: "Server Error",
-      error: err.message,
-    });
+    res.status(500).json({ message: "Server Error", error: err.message });
   }
 });
 
-// =========================
-// TEST API
-// =========================
-app.get("/api/test", async (req, res) => {
-  try {
-    res.status(200).json({
-      success: true,
-      message: "Backend & Database Marmara Cakes siap!",
-    });
-  } catch (err) {
-    res.status(500).json({
-      error: err.message,
-    });
-  }
+// Route tes
+app.get("/api/test", (req, res) => {
+  res.json({ message: "Backend & Database Toko Samudra siap!" });
 });
 
-// EXPORT SERVERLESS
-module.exports = serverless(app);
+module.exports = app;
