@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color */
+  --color-marmara-teal: #004d4a;
+  --color-marmara-gold: #c5a059;
+  --color-marmara-lightGold: #dfc38a;
+  --color-marmara-darkGold: #c5a059;
+  --color-marmara-white: #fffff5;
+  --color-marmara-deepTeal: #006b73;
+  --color-marmara-neutral: #2d2d2d;
+  --color-marmara-lightGrey: #f4f0eb;
+  --color-marmara-deepPink: #d44b7d;
+
+  /* Font Family */
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+
+  --image-store-banjar: url("/img/STORE-BANJAR.png");
+}
+
+@layer base {
+  * {
+    @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

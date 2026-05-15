@@ -1,0 +1,18 @@
+<div className="footer bg-marmara-deepTeal px-15 py-10">
+  <img src="/img/logoMarmara.png" alt="" className="w-35" />
+  <p>Marmara Delightful Cakes</p>
+  <ul>
+    <li>About Us</li>
+    <li>Article</li>
+    <li>Moments</li>
+    <li>B2B</li>
+  </ul>
+  <p>Marmara Delightful Cakes</p>
+  <ul>
+    <li>About Us</li>
+    <li>Article</li>
+    <li>Moments</li>
+    <li>B2B</li>
+  </ul>
+  <ul></ul>
+</div>
