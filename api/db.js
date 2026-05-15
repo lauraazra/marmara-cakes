@@ -11,8 +11,6 @@ const connectDB = async () => {
   try {
     const db = await mongoose.connect(process.env.MONGO_URI, {
       dbName: "marmara-cakes",
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
     });
 
     isConnected = db.connections[0].readyState;
