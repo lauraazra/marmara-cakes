@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const connectDB = require("./db");
+const connectDB = require("./database");
 const HeroBanner = require("./models/herobanners");
 const CategoryProduct = require("./models/categoryproducts");
 const SubCategoryProduct = require("./models/subcategoryproduct");
