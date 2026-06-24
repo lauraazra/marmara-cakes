@@ -1,5 +1,9 @@
 const mongoose = require("mongoose");
 
+/**
+ * Embedded Sub-Schemas
+ * Defines internal structures for product variations and optional add-ons
+ */
 const variantSchema = new mongoose.Schema(
   {
     type: { type: String, required: true },
@@ -18,20 +22,29 @@ const addOnSchema = new mongoose.Schema(
   { _id: false },
 );
 
+/**
+ * Main Product Schema
+ * Defines the core structure, relations, and options for products
+ */
 const productSchema = new mongoose.Schema({
   name: { type: String, required: true },
   description: { type: String },
-  img: { type: String },
+  image: { type: String },
   basePrice: { type: Number },
   subcategoryproductId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "SubCategoryProduct",
     default: null,
   },
-  categoryproductId: {
+  categoryProductId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "CategoryProduct",
+    ref: "categoryProduct",
     required: true,
+  },
+  slug: {
+    type: String,
+    unique: true,
+    lowercase: true,
   },
   variants: [variantSchema],
   addOn: [addOnSchema],
@@ -43,4 +56,8 @@ const productSchema = new mongoose.Schema({
   ],
 });
 
+/**
+ * Model Export
+ * Exports the Product model for database operations
+ */
 module.exports = mongoose.model("Product", productSchema);

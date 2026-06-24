@@ -1,22 +1,87 @@
 @import "tailwindcss";
 
 @theme {
-  /* Color */
+  /* --- DAFTAR WARNA KUSTOM MARMARA CAKE --- */
   --color-marmara-teal: #004d4a;
   --color-marmara-gold: #c5a059;
-  --color-marmara-lightGold: #dfc38a;
-  --color-marmara-darkGold: #c5a059;
+  --color-marmara-light-gold: #dfc38a;
   --color-marmara-white: #fffff5;
-  --color-marmara-deepTeal: #006b73;
   --color-marmara-neutral: #2d2d2d;
-  --color-marmara-lightGrey: #f4f0eb;
-  --color-marmara-deepPink: #d44b7d;
+  --color-marmara-light-grey: #f4f0eb;
+  --color-marmara-deep-pink: #d44b7d;
+  --color-marmara-dark-bg: #002b29;
+  --color-marmara-warm-amber: #d19e60;
+  --color-marmara-deep-teal: #006b73;
 
-  /* Font Family */
-  --font-serif: "Playfair Display", serif;
-  --font-sans: "Montserrat", sans-serif;
+  /* --- TOKEN SEMANTIK --- */
+  --color-text-site: var(--text-site);
+  --color-text-secondary: var(--text-secondary);
 
-  --image-store-banjar: url("/img/STORE-BANJAR.png");
+  --color-bg-site: var(--bg-site);
+  --color-card-site: var(--card-site);
+  --color-border-site: var(--border-site);
+  --color-bg-section-1: var(--bg-section-1);
+  --color-bg-section-2: var(--bg-section-2);
+  --color-link-hover: var(--link-hover);
+
+  --color-btn-primary: var(--btn-primary);
+  --color-btn-primary-text: var(--btn-primary-text);
+  --color-btn-primary-hover: var(--btn-primary-hover);
+
+  --color-btn-secondary: var(--btn-secondary);
+  --color-btn-secondary-text: var(--btn-secondary-text);
+  --color-btn-secondary-hover: var(--btn-secondary-hover);
+
+  --color-shadow-primary: var(--shadow-primary);
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+/* --- (SINKRONISASI TOTAL) --- */
+:root {
+  --text-site: var(--color-marmara-neutral);
+  --text-secondary: var(--color-marmara-deep-teal);
+  --bg-site: var(--color-marmara-white);
+  --card-site: var(--color-marmara-light-grey);
+  --border-site: var(--color-marmara-deep-teal);
+  --bg-section-1: var(--color-marmara-white);
+  --bg-section-2: var(--color-marmara-warm-amber);
+  --link-hover: var(--color-marmara-light-gold);
+
+  --btn-primary: var(--color-marmara-gold);
+  --btn-primary-text: var(--color-marmara-white);
+  --btn-primary-hover: var(--color-marmara-deep-teal);
+
+  --btn-secondary: var(--color-marmara-deep-teal);
+  --btn-secondary-text: var(--color-marmara-teal);
+  --btn-secondary-hover: var(--color-marmara-gold);
+
+  --shadow-primary: var(--color-marmara-deep-teal);
+}
+
+.dark {
+  --text-site: var(--color-marmara-white);
+  --text-secondary: var(--color-marmara-gold);
+
+  --bg-site: var(--color-marmara-dark-bg);
+  --card-site: var(--color-marmara-teal);
+  --border-site: var(--color-marmara-gold);
+  --bg-section-1: var(--color-marmara-dark-bg);
+  --bg-section-2: var(--color-marmara-deep-teal);
+  --btn-primary: var(--color-marmara-gold);
+  --btn-primary-text: var(--color-marmara-dark-bg);
+  --btn-primary-hover: var(--color-marmara-light-gold);
+  --link-hover: var(--color-marmara-gold);
+
+  --btn-primary: var(--color-marmara-deep-teal);
+  --btn-primary-text: var(--color-marmara-dark-bg);
+  --btn-primary-hover: var(--color-marmara-light-gold);
+
+  --btn-secondary: var(--color-marmara-gold);
+  --btn-secondary-text: var(--color-marmara-gold);
+  --btn-secondary-hover: var(--color-marmara-deep-teal);
+
+  --shadow-primary: var(--color-marmara-light-gold);
 }
 
 @layer base {
@@ -32,5 +97,126 @@
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+}
+
+/* Article Content */
+.prose {
+  h2 {
+    font-weight: 800;
+    color: var(--text-site);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
+
+  @media (min-width: 640px) {
+    h2 {
+      font-size: 2.25rem;
+    }
+  }
+
+  h3 {
+    font-weight: 700;
+    color: var(--text-secondary);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+  }
+
+  p {
+    line-height: 1.75;
+    color: var(--text-site);
+    opacity: 0.85;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  @media (min-width: 640px) {
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  a {
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--link-hover);
+    }
+  }
+
+  ul {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    color: var(--text-site);
+  }
+
+  li {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+
+    @media (min-width: 640px) {
+      font-size: 1rem;
+    }
+  }
+
+  table {
+    width: 100% !important;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-collapse: collapse;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: var(--card-site);
+    border: 1px solid rgba(var(--text-site), 0.1) !important;
+  }
+
+  th {
+    background-color: var(--text-secondary);
+    color: var(--bg-site);
+    padding: 0.85rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  td {
+    padding: 0.85rem;
+    font-size: 0.875rem;
+    color: var(--text-site);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  :global(.dark) & td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+
+  :global(.dark) & tr:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+
+  blockquote {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--text-secondary) !important;
+    background-color: var(--card-site) !important;
+    color: var(--text-site) !important;
+    padding: 1.25rem !important;
+    border-radius: 0 1rem 1rem 0;
+    font-style: normal;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   }
 }

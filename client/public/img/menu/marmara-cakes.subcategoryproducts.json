@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "name": "Delightful Square Cake",
+  "slug": "delightful-square-cake",
+  "categoryProductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "name": "Delightful Round Cake",
+  "slug": "delightful-round-cake",
+  "categoryProductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f76e1cf817ec850dd7e77e"
+  },
+  "name": "Miracle Sharing Cake",
+  "slug": "miracle-sharing-cake",
+  "categoryProductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  }
+},
+{
+  "_id": {
+    "$oid": "69f886016f9a681fdbc49662"
+  },
+  "name": "Iced Coffee",
+  "categoryProductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "slug": "iced-coffe"
+},
+{
+  "_id": {
+    "$oid": "69f886016f9a681fdbc4965d"
+  },
+  "name": "Chiffon & Bolu Pisang Khas Tasikmalaya",
+  "categoryProductId": {
+    "$oid": "69f76c33f817ec850dd7e736"
+  },
+  "slug": "chiffon-bolu-pisang-khas-tasikmalaya"
+},
+{
+  "_id": {
+    "$oid": "69f886016f9a681fdbc49661"
+  },
+  "name": "Tiramisu Dessert",
+  "categoryProductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "slug": "tiramisu-desert"
+},
+{
+  "_id": {
+    "$oid": "69f886016f9a681fdbc4965f"
+  },
+  "name": "Sunny Meal",
+  "categoryProductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "slug": "sunny-meal"
+},
+{
+  "_id": {
+    "$oid": "69f886016f9a681fdbc49660"
+  },
+  "name": "Molly Meal",
+  "categoryProductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "slug": "molly-meal"
+},
+{
+  "_id": {
+    "$oid": "69f886016f9a681fdbc49663"
+  },
+  "name": "Iced Milky Delight",
+  "categoryProductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "slug": "iced-milky-delight"
+},
+{
+  "_id": {
+    "$oid": "69f886016f9a681fdbc4965e"
+  },
+  "name": "Chiffon & Bolu Aren Khas Garut",
+  "categoryProductId": {
+    "$oid": "69f76c33f817ec850dd7e736"
+  },
+  "slug": "chiffon-n-bolu-aren-khas-garut"
+},
+{
+  "_id": {
+    "$oid": "6a2e001f8a5922a99c96ea25"
+  },
+  "name": "Joyful Series (20cm)",
+  "slug": "joyful-series",
+  "categoryProductId": {
+    "$oid": "6a2dfef38a5922a99c96ea19"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2e00528a5922a99c96ea27"
+  },
+  "name": "Luvies Series (15cm)",
+  "slug": "luvies-series",
+  "categoryProductId": {
+    "$oid": "6a2dfef38a5922a99c96ea19"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2f56b774cbd326eb653f77"
+  },
+  "name": "Edible Photo",
+  "slug": "edible-photo",
+  "categoryProductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "name": "Big Lettering Cake",
+  "slug": "big-lattering-cake",
+  "categoryProductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  }
+}]

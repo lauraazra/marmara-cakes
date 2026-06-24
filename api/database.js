@@ -10,9 +10,9 @@ const connectDB = async () => {
       dbName: "marmara-cakes",
     });
     isConnected = db.connections[0].readyState;
-    console.log("Database nyambung, Bre!");
+    console.log("Database Tersambung");
   } catch (err) {
-    console.error("Gagal nyambung:", err.message);
+    console.error("Gagal Tersambung:", err.message);
     throw err;
   }
 };

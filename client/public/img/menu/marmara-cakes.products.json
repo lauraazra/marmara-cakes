@@ -1,0 +1,3769 @@
+[{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e787"
+  },
+  "name": "Truffle Chocolate",
+  "description": "Cake Chocolate dengan lapisan Chocolate Mousse dan taburan slice Almond Crunchy.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "truffle-chocolate-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "truffle-chocolate-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "truffle-chocolate-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Truffle-Chocolate.jpg",
+  "addOn": [],
+  "slug": "truffle-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc49616"
+  },
+  "name": "Chiffon Pandan Almond",
+  "description": "Kombinasi harum pandan asli dengan taburan kacang almond yang renyah.",
+  "basePrice": 45000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CHIFFON-PANDAN-ALMOND1.jpg",
+  "slug": "chiffon-pandan-almond"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc4962a"
+  },
+  "name": "(New) Banana Croissant Cheese",
+  "description": "Croissant dengan kombinasi pisang dan keju yang gurih.",
+  "basePrice": 15000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BANANA-CROISSANT-CHEESE.webp",
+  "slug": "new-banana-croissant-cheese"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc49642"
+  },
+  "name": "Biscotti Chocolate",
+  "description": "Biscotti renyah dengan aksen cokelat yang memberikan rasa manis seimbang.",
+  "basePrice": 100000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BISCOTTI-CHOCOLATE.jpg",
+  "slug": "biscotti-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc49646"
+  },
+  "name": "Kaastengels",
+  "description": "Kue keju khas dengan taburan keju melimpah dan rasa yang sangat gurih.",
+  "basePrice": 120000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/KAASTENGELS_.jpg",
+  "slug": "kaastengels"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc4964d"
+  },
+  "name": "Callebaut 60%",
+  "description": "Es krim cokelat premium menggunakan Callebaut 60% untuk rasa yang intens.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Callebaut-60_.jpg",
+  "slug": "callebaut-60percent"
+},
+{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e78b"
+  },
+  "name": "Chocolate Trois",
+  "description": "lapisan cokelat dari Cake Chocolate, Dark, White Chocolate dan Milik Cream yang kaya rasa.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "chocolate-trois-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "chocolate-trois-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "chocolate-trois-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Chocolate-Trois.jpg",
+  "addOn": [],
+  "slug": "chocolate-trois"
+},
+{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e78e"
+  },
+  "name": "Blueberry Cheesecake",
+  "description": "Disertai lembutnya Cheese Cream dan segarnya Blueberry Filling.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "blueberry-cheesecake-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "blueberry-cheesecake-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "blueberry-cheesecake-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Blueberry-Cheesecake.jpg",
+  "addOn": [],
+  "slug": "blueberry-cheesecake"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7a4"
+  },
+  "name": "Ruby Velvet",
+  "description": "Kombinasi Milo yang Milky dan Red Velvet yang khas dan nikmat.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "ruby-velvet-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Ruby-Velvet.jpg",
+  "addOn": [],
+  "slug": "ruby-velvet"
+},
+{
+  "_id": {
+    "$oid": "69f827a77ed0548904341752"
+  },
+  "name": "Custom Cake Big 24",
+  "description": "Pilihan ukuran yang lebih lega untuk perayaan yang lebih meriah. Kualitas premium dengan desain yang bisa kamu sesuaikan sepenuhnya.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Duo Chocolate",
+      "price": 150000,
+      "img": "duo-chocolato-big24.png"
+    },
+    {
+      "type": "Matcha Souffle",
+      "price": 150000,
+      "img": "matcha-souffle-big24.png"
+    },
+    {
+      "type": "Midnight Blueberry",
+      "price": 150000,
+      "img": "midnight-blueberry-big24.png"
+    },
+    {
+      "type": "Black Amor Crunchy",
+      "price": 150000,
+      "img": "black-amor-crunchy-big24.png"
+    },
+    {
+      "type": "Tiramisu",
+      "price": 150000,
+      "img": "tiramisu-big24.png"
+    },
+    {
+      "type": "Deluxe Black Forest",
+      "price": 150000,
+      "img": "deluxe-black-forest-big24.png"
+    },
+    {
+      "type": "Red Velvet Maestri",
+      "price": 150000,
+      "img": "red-velvet-maestri-big24.png"
+    },
+    {
+      "type": "Truffle Chocolate",
+      "price": 150000,
+      "img": "truffle-chocolate-big24.png"
+    },
+    {
+      "type": "Blueberry Cheesecake",
+      "price": 150000,
+      "img": "blueberry-cheesecake-big24.png"
+    },
+    {
+      "type": "Flamingo Strawberry",
+      "price": 150000,
+      "img": "flamingo-strawberry-big24.png"
+    }
+  ],
+  "addOn": [
+    {
+      "name": "Signature Cake",
+      "price": 75000
+    },
+    {
+      "name": "Edible Cake",
+      "price": 200000
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/custom-cake-big-24.png",
+  "slug": "custom-cake-big-24"
+},
+{
+  "_id": {
+    "$oid": "69f87c6e6f9a681fdbc4960d"
+  },
+  "name": "Red Velvet Swiss Roll Cake",
+  "description": "Gulungan cake red velvet yang lembut dengan isian cream khas yang manis dan gurih.",
+  "basePrice": 70000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e734"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/SWISS-ROLL-CAKE-RED-VELVET.webp",
+  "slug": "red-velvet-swiss-roll-cake"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc49615"
+  },
+  "name": "Chiffon Cheese",
+  "description": "Chiffon cake lembut dengan aroma keju yang menggoda di setiap gigitan.",
+  "basePrice": 45000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CHIFFON-CHEESE1.jpg",
+  "slug": "chiffon-cheese"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc4962e"
+  },
+  "name": "Hazelnut Chocolate Banana",
+  "description": "Croissant dengan isian perpaduan hazelnut, cokelat, dan pisang.",
+  "basePrice": 28000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/HAZELNUT-CHOCOLATE-BANANA.jpg",
+  "slug": "hazelnut-chocolate-banana"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc49641"
+  },
+  "name": "Lidah Kucing",
+  "description": "Kue tipis yang renyah dan gurih, teman setia untuk ngopi atau ngeteh.",
+  "basePrice": 100000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/SAGU-KEJU.jpg",
+  "slug": "lidah-kucing"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc49647"
+  },
+  "name": "Parmesan Cheese Stick",
+  "description": "Stik keju renyah dengan rasa parmesan yang kuat, cocok untuk camilan santai.",
+  "basePrice": 100000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/PARMESAN-CHEESE-STICK.jpg",
+  "slug": "parmesan-cheese-stick"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc4964b"
+  },
+  "name": "Arabica Coffee",
+  "description": "Es krim dengan cita rasa kopi Arabica yang bold dan menyegarkan.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Arabica-Coffee.jpg",
+  "slug": "arabica-coffee"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc4964c"
+  },
+  "name": "Blueberry Yoghurt",
+  "description": "Perpaduan segar yoghurt dengan sentuhan rasa buah blueberry asli.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Blueberry-Yoghurt.jpg",
+  "slug": "blueberry-yoghurt"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc49652"
+  },
+  "name": "Pistachio",
+  "description": "Es krim dengan rasa kacang pistachio yang gurih dan mewah.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Pistachio.jpg",
+  "slug": "pistachio"
+},
+{
+  "_id": {
+    "$oid": "69f88ac46f9a681fdbc49667"
+  },
+  "name": "Iced Matcha Blueberry",
+  "description": "Perpaduan unik rasa matcha yang earthy dengan kesegaran sirup blueberry dalam sajian susu dingin.",
+  "basePrice": 25000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49663"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ICED-MATCHA-BLUEBERRY.webp",
+  "slug": "iced-matcha-blueberry"
+},
+{
+  "_id": {
+    "$oid": "69f88acf6f9a681fdbc4966a"
+  },
+  "name": "Iced Americano",
+  "description": "Kopi hitam segar dengan sensasi dingin yang pas untuk membangkitkan semangat.",
+  "basePrice": 20000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49662"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ICED-AMERICANO.webp",
+  "slug": "iced-americano"
+},
+{
+  "_id": {
+    "$oid": "69f88acf6f9a681fdbc4966b"
+  },
+  "name": "Iced Caffe Latte",
+  "description": "Perpaduan harmonis antara espresso dan susu dingin yang lembut.",
+  "basePrice": 20000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49662"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ICED-CAFFE-LATTE.webp",
+  "slug": "iced-caffe-latte"
+},
+{
+  "_id": {
+    "$oid": "69f88acf6f9a681fdbc49671"
+  },
+  "name": "Iced Coffee Palm Sugar",
+  "description": "Kopi susu dengan manisnya gula aren asli yang khas.",
+  "basePrice": 20000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49662"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ICED-COFFEE-PALM-SUGAR.webp",
+  "slug": "iced-coffee-palm-sugar"
+},
+{
+  "_id": {
+    "$oid": "69f88ae66f9a681fdbc4967e"
+  },
+  "name": "Broyo Matcha",
+  "description": "Kenikmatan yogurt dengan sentuhan rasa teh hijau matcha yang autentik dan lembut.",
+  "basePrice": 35000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/MATCHA.jpg",
+  "slug": "broyo-matcha"
+},
+{
+  "_id": {
+    "$oid": "69f88ae66f9a681fdbc49681"
+  },
+  "name": "Milo Dazzle",
+  "description": "Dessert cup dengan rasa Milo yang khas, manis, dan tekstur yang lembut.",
+  "basePrice": 35000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/MILO-DAZZLE.jpg",
+  "slug": "milo-dazzle"
+},
+{
+  "_id": {
+    "$oid": "69f88ae66f9a681fdbc49683"
+  },
+  "name": "Cadbury Turkish Delight",
+  "description": "Dessert cup mewah dengan paduan rasa cokelat Cadbury dan tekstur kenyal khas Turkish Delight.",
+  "basePrice": 35000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CADBURY-TURKKISH-DELIGHT.jpg",
+  "slug": "cadbury-turkish-delight"
+},
+{
+  "_id": {
+    "$oid": "69f88afb6f9a681fdbc4968b"
+  },
+  "name": "Bolu Pisang Keju",
+  "description": "Bolu pisang khas Tasikmalaya yang padat dan lembut, dilengkapi dengan topping keju parut yang melimpah.",
+  "basePrice": 40000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e736"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BOLU-PIANG-KEJU.jpg",
+  "slug": "bolu-pisang-keju"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7a7"
+  },
+  "name": "Kaastengels Cake",
+  "description": "Cake Vanila berpadu cita rasa mousse cream keju, dan kaastengels yang crunchy.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "kaastengels-cake-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Kaastengels-Cake.jpg",
+  "addOn": [],
+  "slug": "kaastengels-cake"
+},
+{
+  "_id": {
+    "$oid": "69f77c4af817ec850dd7e7b0"
+  },
+  "name": "Miracle Sharing Red Velvet Maestri",
+  "description": "Paduan red velvet khas Marmara dalam potongan sharing yang cocok untuk kebersamaan.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77e"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Sharing (36 Slice)",
+      "price": 250000,
+      "size": "20x20 cm",
+      "img": "miracle-sharing-red-velvet-maestri-sharing-36-slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/MS-Red-Velvet-Maestri.jpg",
+  "addOn": [],
+  "slug": "miracle-sharing-red-velvet-maestri"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc49632"
+  },
+  "name": "Croffle Brown Sugar",
+  "description": "Croffle renyah dengan siraman brown sugar yang manis dan wangi.",
+  "basePrice": 20000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CROFFLE-BROWN-SUGAR.jpg",
+  "slug": "croffle-brown-sugar"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc49640"
+  },
+  "name": "Chocolate Crunch",
+  "description": "Kue kering cokelat yang renyah dengan rasa cokelat intens yang memanjakan.",
+  "basePrice": 95000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CHOCOLATE-CRUNCH.jpg",
+  "slug": "chocolate-crunch"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc49651"
+  },
+  "name": "Mango Yoghurt",
+  "description": "Kombinasi yoghurt creamy dengan manisnya buah mangga pilihan.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Mango-Yoghurt.jpg",
+  "slug": "mango-yoghurt"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc49655"
+  },
+  "name": "Thai Tea",
+  "description": "Es krim dengan cita rasa khas Thai Tea yang manis dan beraroma.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Thai-Tea.jpg",
+  "slug": "thai-tea"
+},
+{
+  "_id": {
+    "$oid": "69f88acf6f9a681fdbc4966d"
+  },
+  "name": "Iced Caramel Machiato",
+  "description": "Kopi susu dengan sentuhan sirup karamel manis yang nikmat.",
+  "basePrice": 20000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49662"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ICED-CARAMEL-MACHIATO.webp",
+  "slug": "iced-caramel-machiato"
+},
+{
+  "_id": {
+    "$oid": "69f88aee6f9a681fdbc49688"
+  },
+  "name": "Bolu Aren Black Forest",
+  "description": "Bolu gula aren khas Garut dengan sentuhan cita rasa Black Forest yang unik.",
+  "basePrice": 40000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965e"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e736"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BOLU-AREN-BLACK-FOREST.jpg",
+  "slug": "bolu-aren-black-forest"
+},
+{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e783"
+  },
+  "name": "Matcha Souffle",
+  "description": "Rasa kekinian dari Matcha kombinasi cokelat lembut yang nikmat makin spesial buat perayaan.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "matcha-souffle-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "matcha-souffle-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "matcha-souffle-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Matcha-Souffle.jpg",
+  "addOn": [],
+  "slug": "matcha-souffle"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7aa"
+  },
+  "name": "Bubby Berries",
+  "description": "Kesegaran Blueberry dan Uniknya Black Forest.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "bubby-berries-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Bubby-Berries.jpg",
+  "addOn": [],
+  "slug": "bubby-berries"
+},
+{
+  "_id": {
+    "$oid": "69f77c4af817ec850dd7e7af"
+  },
+  "name": "Miracle Sharing Tiramisu",
+  "description": "Kelembutan Tiramisu premium dengan 36 potongan sharing yang nikmat.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77e"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Sharing (36 Slice)",
+      "price": 250000,
+      "size": "20x20 cm",
+      "img": "miracle-sharing-tiramisu-sharing-36-slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/MS-Tiramisu.jpg",
+  "addOn": [],
+  "slug": "miracle-sharing-tiramisu"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc4964f"
+  },
+  "name": "Lemon Sorbet",
+  "description": "Sorbet lemon yang segar, asam, dan manis, sangat pas untuk pencuci mulut.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Lemon-Sorbet.jpg",
+  "slug": "lemon-sorbet"
+},
+{
+  "_id": {
+    "$oid": "69f88ac46f9a681fdbc49669"
+  },
+  "name": "Iced Sweet Choco Berry",
+  "description": "Kombinasi sempurna cokelat manis dengan sensasi asam segar dari berry dalam minuman susu dingin.",
+  "basePrice": 25000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49663"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ICED-SWEET-CHOCO-BERRY.webp",
+  "slug": "iced-sweet-choco-berry"
+},
+{
+  "_id": {
+    "$oid": "69f88acf6f9a681fdbc4966e"
+  },
+  "name": "Iced Coffee Lemonade",
+  "description": "Kopi dingin dengan sensasi rasa lemon yang unik dan menyegarkan.",
+  "basePrice": 20000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49662"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ICED-COFFEE-LEMONADE.webp",
+  "slug": "iced-coffee-lemonade"
+},
+{
+  "_id": {
+    "$oid": "69f88acf6f9a681fdbc4966f"
+  },
+  "name": "Iced Coffee Cookies N' Cream",
+  "description": "Kopi dingin dengan paduan rasa cookies n' cream yang lezat dan tekstur creamy.",
+  "basePrice": 25000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49662"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ICED-COFFEE-COOKIES-N-CREAM.webp",
+  "slug": "iced-coffee-cookies-n-cream"
+},
+{
+  "_id": {
+    "$oid": "69f88ad76f9a681fdbc49672"
+  },
+  "name": "(NEW) Tiramisu Dessert Matcha",
+  "description": "Dessert tiramisu lembut dengan sentuhan rasa matcha yang autentik dan menyegarkan.",
+  "basePrice": 45000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49661"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/tiramisu-dessert-matcha.jpg",
+  "slug": "new-tiramisu-dessert-matcha"
+},
+{
+  "_id": {
+    "$oid": "69f88ae66f9a681fdbc4967d"
+  },
+  "name": "Broyo Mango",
+  "description": "Dessert yogurt creamy dengan topping mangga segar pilihan yang manis.",
+  "basePrice": 35000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/MANGO.jpg",
+  "slug": "broyo-mango"
+},
+{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e788"
+  },
+  "name": "Chocolate Heaven",
+  "description": "Premium 4 layer chocolate cake dengan mousse lembut & glaze glossy. Rich, balance, dan super lembut.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "chocolate-heaven-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "chocolate-heaven-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "chocolate-heaven-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Heaven-Chocolate.jpg",
+  "addOn": [],
+  "slug": "chocolate-heaven"
+},
+{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e789"
+  },
+  "name": "Midnight Blueberry",
+  "description": "Cake Chocolate dan Blueberry Cream yang semakin sempurna dengan selai Blueberry diatasnya.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "midnight-blueberry-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "midnight-blueberry-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "midnight-blueberry-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Midnight-Blueberry.jpg",
+  "addOn": [],
+  "slug": "midnight-blueberry"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7a0"
+  },
+  "name": "Mochi Choclate Cake",
+  "description": "Lembutnya sponge cokelat, creamy-nya mousse, dan kenyalnya Mochi.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "mochi-choclate-cake-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/MOCHI-CHOCOLATE-CAKE.jpg",
+  "addOn": [],
+  "slug": "mochi-choclate-cake"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7a6"
+  },
+  "name": "Pistachio Cake",
+  "description": "Sponge pistachio yang lembut, mousse pistachio creamy, hingga topping kacang pistachio asli.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "pistachio-cake-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/PISTACHIO-CAKE.jpg",
+  "addOn": [],
+  "slug": "pistachio-cake"
+},
+{
+  "_id": {
+    "$oid": "69f77c4af817ec850dd7e7b2"
+  },
+  "name": "Miracle Sharing Flamingo Strawberry",
+  "description": "Segarnya stroberi berpadu dengan cake lembut, pilihan tepat untuk berbagi.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77e"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Sharing (36 Slice)",
+      "price": 250000,
+      "size": "20x20 cm",
+      "img": "miracle-sharing-flamingo-strawberry-sharing-36-slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/MS-Flamingo-Strawberry.jpg",
+  "addOn": [],
+  "slug": "miracle-sharing-flamingo-strawberry"
+},
+{
+  "_id": {
+    "$oid": "69f827a77ed0548904341750"
+  },
+  "name": "Custom Cake Medium",
+  "description": "Kue spesial yang bisa dikustomisasi sesuai keinginanmu, ukuran medium yang pas untuk merayakan momen berharga bersama orang tersayang.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Duo Chocolate",
+      "price": 150000,
+      "img": "duo-chocolato-medium.png"
+    },
+    {
+      "type": "Matcha Souffle",
+      "price": 150000,
+      "img": "matcha-souffle-medium.png"
+    },
+    {
+      "type": "Midnight Blueberry",
+      "price": 150000,
+      "img": "midnight-blueberry-medium.png"
+    },
+    {
+      "type": "Black Amor Crunchy",
+      "price": 150000,
+      "img": "black-amor-crunchy-medium.png"
+    },
+    {
+      "type": "Tiramisu",
+      "price": 150000,
+      "img": "tiramisu-medium.png"
+    },
+    {
+      "type": "Deluxe Black Forest",
+      "price": 150000,
+      "img": "deluxe-black-forest-medium.png"
+    },
+    {
+      "type": "Red Velvet Maestri",
+      "price": 150000,
+      "img": "red-velvet-maestri-medium.png"
+    },
+    {
+      "type": "Truffle Chocolate",
+      "price": 150000,
+      "img": "truffle-chocolate-medium.png"
+    },
+    {
+      "type": "Blueberry Cheesecake",
+      "price": 150000,
+      "img": "blueberry-cheesecake-medium.png"
+    },
+    {
+      "type": "Flamingo Strawberry",
+      "price": 150000,
+      "img": "flamingo-strawberry-medium.png"
+    }
+  ],
+  "addOn": [
+    {
+      "name": "Signature Cake",
+      "price": 25000
+    },
+    {
+      "name": "Edible Cake",
+      "price": 50000
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/custom-cake-medium.png",
+  "slug": "custom-cake-medium"
+},
+{
+  "_id": {
+    "$oid": "69f827a77ed0548904341754"
+  },
+  "name": "Custom Cake Big 46",
+  "description": "Koleksi paling eksklusif dengan kapasitas besar. Sempurna untuk acara spesial yang membutuhkan tampilan kue mewah dan rasa yang tak terlupakan.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Duo Chocolate",
+      "price": 150000,
+      "img": "duo-chocolato-big46.png"
+    },
+    {
+      "type": "Matcha Souffle",
+      "price": 150000,
+      "img": "matcha-souffle-big46.png"
+    },
+    {
+      "type": "Midnight Blueberry",
+      "price": 150000,
+      "img": "midnight-blueberry-big46.png"
+    },
+    {
+      "type": "Black Amor Crunchy",
+      "price": 150000,
+      "img": "black-amor-crunchy-big46.png"
+    },
+    {
+      "type": "Tiramisu",
+      "price": 150000,
+      "img": "tiramisu-big46.png"
+    },
+    {
+      "type": "Deluxe Black Forest",
+      "price": 150000,
+      "img": "deluxe-black-forest-big46.png"
+    },
+    {
+      "type": "Red Velvet Maestri",
+      "price": 150000,
+      "img": "red-velvet-maestri-big46.png"
+    },
+    {
+      "type": "Truffle Chocolate",
+      "price": 150000,
+      "img": "truffle-chocolate-big46.png"
+    },
+    {
+      "type": "Blueberry Cheesecake",
+      "price": 150000,
+      "img": "blueberry-cheesecake-big46.png"
+    },
+    {
+      "type": "Flamingo Strawberry",
+      "price": 150000,
+      "img": "flamingo-strawberry-big46.png"
+    }
+  ],
+  "addOn": [
+    {
+      "name": "Signature Cake",
+      "price": 125000
+    },
+    {
+      "name": "Edible Cake",
+      "price": 600000
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/custom-cake-big-46.png",
+  "slug": "custom-cake-big-46"
+},
+{
+  "_id": {
+    "$oid": "69f87c6e6f9a681fdbc4960f"
+  },
+  "name": "Choco Swiss Roll Cake",
+  "description": "Swiss roll cokelat premium dengan rasa cokelat yang pekat dan tekstur yang sangat lembut.",
+  "basePrice": 70000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e734"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/SWISS-ROLL-CAKE-CHOCO.webp",
+  "slug": "choco-swiss-roll-cake"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc49614"
+  },
+  "name": "Chiffon Chokollis",
+  "description": "Chiffon cake cokelat yang ringan dengan rasa cokelat yang mantap.",
+  "basePrice": 45000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CHIFFON-CHOKOLLIS1.jpg",
+  "slug": "chiffon-chokollis"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc49618"
+  },
+  "name": "Bolu Cokelat Almond",
+  "description": "Bolu cokelat klasik dengan topping irisan almond yang memberikan tekstur ekstra.",
+  "basePrice": 35000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BOLU-COKELAT-ALMOND.webp",
+  "slug": "bolu-cokelat-almond"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc4961b"
+  },
+  "name": "Bolen Pisang Cokelat",
+  "description": "Pastry renyah dengan isian pisang dan cokelat yang lumer di dalam.",
+  "basePrice": 65000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BOLU-PIANG-KEJU.jpg",
+  "slug": "bolen-pisang-cokelat"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc4961c"
+  },
+  "name": "Bolen Pisang Keju",
+  "description": "Bolen pisang klasik dengan isian keju yang gurih dan berpadu pas dengan pisang.",
+  "basePrice": 65000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BOLEN-PISANG-KEJU1.jpg",
+  "slug": "bolen-pisang-keju"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc49628"
+  },
+  "name": "(New) Matcha Croissant",
+  "description": "Croissant renyah dengan isian cream matcha yang lembut dan rasa yang autentik.",
+  "basePrice": 20000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/MATCHA-CROISSANT.webp",
+  "slug": "new-matcha-croissant"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc4962f"
+  },
+  "name": "Almond Croissant",
+  "description": "Croissant klasik dengan taburan almond renyah di atasnya.",
+  "basePrice": 27000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ALMOND-CROISSANT.jpg",
+  "slug": "almond-croissant"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc49645"
+  },
+  "name": "Chesse Batton",
+  "description": "Stik keju panggang yang gurih dan renyah, camilan asin favorit banyak orang.",
+  "basePrice": 120000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CHEESE-BATTON.jpg",
+  "slug": "chesse-batton"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc49657"
+  },
+  "name": "Vanilla",
+  "description": "Es krim vanilla klasik dengan aroma yang lembut dan menenangkan.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Vanilla.jpg",
+  "slug": "vanilla"
+},
+{
+  "_id": {
+    "$oid": "69f88acf6f9a681fdbc49670"
+  },
+  "name": "Iced Mocha Latte",
+  "description": "Perpaduan kopi, susu, dan cokelat dalam sajian dingin yang memanjakan.",
+  "basePrice": 20000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49662"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ICED-COFFEE-MOCHA-LATTE.webp",
+  "slug": "iced-mocha-latte"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7a1"
+  },
+  "name": "Tiramisu Chocolate",
+  "description": "Kelembutan Cake Vanila dan Cokelat dengan Tiramisu Cream yang Lezat.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "tiramisu-chocolate-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Tiramisu-Chocolate.jpg",
+  "addOn": [],
+  "slug": "tiramisu-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f87c6e6f9a681fdbc4960e"
+  },
+  "name": "Cheese Swiss Roll Cake",
+  "description": "Kelembutan swiss roll dengan taburan keju melimpah, pilihan sempurna untuk pecinta keju.",
+  "basePrice": 70000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e734"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/SWISS-ROLL-CAKE-CHEESE.webp",
+  "slug": "cheese-swiss-roll-cake"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc49617"
+  },
+  "name": "Bolu Cokelat Keju",
+  "description": "Perpaduan rasa manis cokelat dan gurih keju dalam satu suapan bolu lembut.",
+  "basePrice": 35000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BOLU-COKELAT-KEJU.jpg",
+  "slug": "bolu-cokelat-keju"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc4961e"
+  },
+  "name": "Lapis Surabaya",
+  "description": "Kue lapis legendaris dengan tekstur super lembut dan rasa yang autentik.",
+  "basePrice": 65000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/LAPIS-SURABAYA.webp",
+  "slug": "lapis-surabaya"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc49620"
+  },
+  "name": "Brownies Chocolate",
+  "description": "Cita rasa brownies cokelat murni yang fudgy dan sangat memanjakan lidah.",
+  "basePrice": 60000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BROWNIES-CHOCOLATE1.jpg",
+  "slug": "brownies-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f88ad76f9a681fdbc49675"
+  },
+  "name": "Tiramisusu Piccola Belgian Choco",
+  "description": "Tiramisusu premium dengan siraman saus cokelat Belgian yang mewah dan lumer.",
+  "basePrice": 45000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49661"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/TIRAMISU-PICCOLA-BELGIAN-CHOCO.jpg",
+  "slug": "tiramisusu-piccola-belgian-choco"
+},
+{
+  "_id": {
+    "$oid": "69f88ae66f9a681fdbc4967f"
+  },
+  "name": "Broyo Chocolate",
+  "description": "Dessert yogurt favorit dengan topping cokelat premium yang memanjakan lidah.",
+  "basePrice": 35000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BROYO-CHOCOLATE.jpg",
+  "slug": "broyo-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f88ae66f9a681fdbc49682"
+  },
+  "name": "Lava Cheesecake",
+  "description": "Cheesecake lembut dengan isian lumer yang lumer di setiap suapan.",
+  "basePrice": 35000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/LAVA-CHEESECAKE.jpg",
+  "slug": "lava-cheesecake"
+},
+{
+  "_id": {
+    "$oid": "69f88afb6f9a681fdbc4968a"
+  },
+  "name": "Chiffon Pisang Choco Chips",
+  "description": "Chiffon pisang yang lembut dan wangi, dipadukan dengan choco chips yang manis dan lezat.",
+  "basePrice": 45000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e736"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CHIFFON-PISANG-CHOCO-CHIPS.jpg",
+  "slug": "chiffon-pisang-choco-chips"
+},
+{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e785"
+  },
+  "name": "Tiramisu",
+  "description": "Cake Vanilla yang dibalut dengan White Chocolate dan Coffee Cream semakin sempurna dengan taburan bubuk Kakao diatasnya.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "tiramisu-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "tiramisu-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "tiramisu-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Tiramisu-768x768.jpg",
+  "addOn": [],
+  "slug": "tiramisu"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7ac"
+  },
+  "name": "Dreamy Chocolate",
+  "description": "Mousse Chocolate yang lembut berpadu sempurna dengan Cake Chocolate.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "dreamy-chocolate-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Dreamy-Chocolate.jpg",
+  "addOn": [],
+  "slug": "dreamy-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f827a77ed0548904341751"
+  },
+  "name": "Custom Cake Large",
+  "description": "Rayakan momen spesial dengan ukuran yang lebih besar. Kue premium dengan sentuhan personal yang elegan dan memanjakan lidah.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Duo Chocolate",
+      "price": 150000,
+      "img": "duo-chocolato-large.png"
+    },
+    {
+      "type": "Matcha Souffle",
+      "price": 150000,
+      "img": "matcha-souffle-large.png"
+    },
+    {
+      "type": "Midnight Blueberry",
+      "price": 150000,
+      "img": "midnight-blueberry-large.png"
+    },
+    {
+      "type": "Black Amor Crunchy",
+      "price": 150000,
+      "img": "black-amor-crunchy-large.png"
+    },
+    {
+      "type": "Tiramisu",
+      "price": 150000,
+      "img": "tiramisu-large.png"
+    },
+    {
+      "type": "Deluxe Black Forest",
+      "price": 150000,
+      "img": "deluxe-black-forest-large.png"
+    },
+    {
+      "type": "Red Velvet Maestri",
+      "price": 150000,
+      "img": "red-velvet-maestri-large.png"
+    },
+    {
+      "type": "Truffle Chocolate",
+      "price": 150000,
+      "img": "truffle-chocolate-large.png"
+    },
+    {
+      "type": "Blueberry Cheesecake",
+      "price": 150000,
+      "img": "blueberry-cheesecake-large.png"
+    },
+    {
+      "type": "Flamingo Strawberry",
+      "price": 150000,
+      "img": "flamingo-strawberry-large.png"
+    }
+  ],
+  "addOn": [
+    {
+      "name": "Signature Cake",
+      "price": 50000
+    },
+    {
+      "name": "Edible Cake",
+      "price": 100000
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/custom-cake-large.png",
+  "slug": "custom-cake-large"
+},
+{
+  "_id": {
+    "$oid": "69f87c6e6f9a681fdbc4960c"
+  },
+  "name": "Delish Black Forest Swiss Roll Cake",
+  "description": "Swiss roll lembut dengan perpaduan rasa Black Forest yang klasik dan menggugah selera.",
+  "basePrice": 70000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e734"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/SWISS-ROLL-CAKE-BLACK-FOREST.webp",
+  "slug": "delish-black-forest-swiss-roll-cake"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc49630"
+  },
+  "name": "Butter Croissant",
+  "description": "Croissant standar dengan aroma butter yang kuat dan tekstur sempurna.",
+  "basePrice": 18000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/PLAIN-BUTTER-CROISSANT.jpg",
+  "slug": "butter-croissant"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc4963d"
+  },
+  "name": "Putri Salju",
+  "description": "Kue klasik dengan tekstur lembut yang lumer di mulut dan balutan gula halus yang pas.",
+  "basePrice": 85000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/PUTRI-SALJU.jpg",
+  "slug": "putri-salju"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc4963f"
+  },
+  "name": "Golden Nastar",
+  "description": "Nastar premium dengan isian selai nanas asli yang segar dan manis.",
+  "basePrice": 90000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/GOLDEN-NASTAR.jpg",
+  "slug": "golden-nastar"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc4964e"
+  },
+  "name": "Green Tea",
+  "description": "Es krim matcha yang lembut dengan rasa teh hijau autentik.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Green-Tea.jpg",
+  "slug": "green-tea"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc49650"
+  },
+  "name": "Mango Sorbet",
+  "description": "Sensasi kesegaran buah mangga asli dalam setiap suapan sorbet.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Mango-Sorbet.jpg",
+  "slug": "mango-sorbet"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc49654"
+  },
+  "name": "Strawberry Sorbet",
+  "description": "Sorbet stroberi dengan rasa buah yang dominan dan menyegarkan.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Strawberry-Sorbet.jpg",
+  "slug": "strawberry-sorbet"
+},
+{
+  "_id": {
+    "$oid": "69f88ac46f9a681fdbc49668"
+  },
+  "name": "Iced Falooda Fruit Punch Milky",
+  "description": "Minuman susu dengan cita rasa buah-buahan tropis yang segar dan warna-warni ceria.",
+  "basePrice": 25000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49663"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ICED-FALOODA-FRUIT-PUNCH-MILKY.webp",
+  "slug": "iced-falooda-fruit-punch-milky"
+},
+{
+  "_id": {
+    "$oid": "69f88ae66f9a681fdbc49684"
+  },
+  "name": "Mango Amary",
+  "description": "Dessert cup dengan lapisan mangga segar dan tekstur lembut yang menyegarkan.",
+  "basePrice": 35000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/MANGO-AMARY.jpg",
+  "slug": "mango-amary"
+},
+{
+  "_id": {
+    "$oid": "69f88aee6f9a681fdbc49685"
+  },
+  "name": "Chiffon Aren Almond",
+  "description": "Chiffon lembut dengan aroma gula aren khas Garut dan taburan almond yang gurih.",
+  "basePrice": 45000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965e"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e736"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CHIFFON-AREN-ALMOND.jpg",
+  "slug": "chiffon-aren-almond"
+},
+{
+  "_id": {
+    "$oid": "69f88aee6f9a681fdbc49687"
+  },
+  "name": "Bolu Aren Keju",
+  "description": "Bolu dengan kelembutan gula aren khas Garut dilengkapi topping keju parut yang melimpah.",
+  "basePrice": 40000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965e"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e736"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BOLU-AREN-KEJU.jpg",
+  "slug": "bolu-aren-keju"
+},
+{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e78c"
+  },
+  "name": "Black Amor Crunchy",
+  "description": "Cake Chocolate sebagai dasar dengan tiap layer terdapat Dark Chocolate Cream dan lapisan atas yang crunchy.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "black-amor-crunchy-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "black-amor-crunchy-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "black-amor-crunchy-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Black-Amor-Crunchy.jpg",
+  "addOn": [],
+  "slug": "black-amor-crunchy"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc4961d"
+  },
+  "name": "Banana Cheesy Cake",
+  "description": "Cake pisang premium dengan sentuhan rasa keju yang membuatnya makin nikmat.",
+  "basePrice": 50000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BANANA-CHEESY-CAKE.webp",
+  "slug": "banana-cheesy-cake"
+},
+{
+  "_id": {
+    "$oid": "69f87dce6f9a681fdbc49624"
+  },
+  "name": "(New) Cheese Roll",
+  "description": "Pastry renyah dengan isian keju gurih yang nikmat, isi 10 pcs.",
+  "basePrice": 65000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e738"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/KATALOG-CHEESE-ROLL.jpg",
+  "slug": "new-cheese-roll"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc4962b"
+  },
+  "name": "Pain Au Chocolate Croissant Mini",
+  "description": "Croissant cokelat ukuran mini yang cocok untuk teman ngemil.",
+  "basePrice": 35000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/PAIN-AU-CHOCOLATE-CROISSANT-MINI-NEW.webp",
+  "slug": "pain-au-chocolate-croissant-mini"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc4962d"
+  },
+  "name": "Crotabak",
+  "description": "Inovasi croissant dengan cita rasa martabak yang unik dan lezat.",
+  "basePrice": 23000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Crotabak.jpg",
+  "slug": "crotabak"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc49631"
+  },
+  "name": "Kouign Amann Croissant",
+  "description": "Kouign amann renyah dengan lapisan karamel yang legit.",
+  "basePrice": 27000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/KOUIGN-AMANN-CROISSANT.jpg",
+  "slug": "kouign-amann-croissant"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc49656"
+  },
+  "name": "Valrhona Guanaja",
+  "description": "Es krim cokelat premium menggunakan cokelat Valrhona Guanaja yang elegan.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Valrhona-Guanaja.jpg",
+  "slug": "valrhona-guanaja"
+},
+{
+  "_id": {
+    "$oid": "69f88ad76f9a681fdbc49673"
+  },
+  "name": "Tiramisu Dessert Black Forest",
+  "description": "Perpaduan klasik tiramisu dengan sensasi rasa Black Forest yang kaya cokelat.",
+  "basePrice": 45000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49661"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/TIRAMISU-DESSERT-BLACK-FOREST.webp",
+  "slug": "tiramisu-dessert-black-forest"
+},
+{
+  "_id": {
+    "$oid": "69f88ad76f9a681fdbc49674"
+  },
+  "name": "Tiramisu Dessert Almond",
+  "description": "Tiramisu lembut dengan tambahan topping irisan almond yang memberikan tekstur renyah.",
+  "basePrice": 45000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49661"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/TIRAMISU-DESSERT-ALMOND.webp",
+  "slug": "tiramisu-dessert-almond"
+},
+{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e78a"
+  },
+  "name": "Flamingo Strawberry",
+  "description": "Strawberry dan Mango Mousse menjadi tak ternilai kolaborasi Cake Vanilla yang lembut.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "flamingo-strawberry-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "flamingo-strawberry-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "flamingo-strawberry-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Flamingo-Strawberry.jpg",
+  "addOn": [],
+  "slug": "flamingo-strawberry"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7a5"
+  },
+  "name": "Nastar Cake",
+  "description": "Perpaduan mousse nanas segar, sponge vanilla lembut, dan topping nastar klasik.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "nastar-cake-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Nastar-Cake.jpg",
+  "addOn": [],
+  "slug": "nastar-cake"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7a9"
+  },
+  "name": "Motta Chocolate",
+  "description": "Rasa Cake dengan Mousse menjadi cake terbaik dari Kami.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "motta-chocolate-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Motta-Chocolate.jpg",
+  "addOn": [],
+  "slug": "motta-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc49613"
+  },
+  "name": "Bolu Marble",
+  "description": "Perpaduan klasik bolu dengan motif marmer yang cantik, lembut dan lezat.",
+  "basePrice": 30000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BOLU-MARBLE.jpg",
+  "slug": "bolu-marble"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc49619"
+  },
+  "name": "Bolu Pandan Cokelat Almond",
+  "description": "Sajian bolu pandan yang dipadukan dengan cokelat dan taburan almond.",
+  "basePrice": 35000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BOLU-PANDAN-COKELAT-ALMOND.jpg",
+  "slug": "bolu-pandan-cokelat-almond"
+},
+{
+  "_id": {
+    "$oid": "69f87dce6f9a681fdbc49625"
+  },
+  "name": "(New) Choco Roll",
+  "description": "Pastry renyah dengan isian cokelat lumer yang menggoda, isi 10 pcs.",
+  "basePrice": 65000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e738"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/KATALOG-CHOCO-ROLL.jpg",
+  "slug": "new-choco-roll"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc49633"
+  },
+  "name": "Pain Au Chocolate",
+  "description": "Pastry klasik khas Prancis dengan isian cokelat premium di dalamnya.",
+  "basePrice": 22000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/PAIN-AU-CHOCOLATE.jpg",
+  "slug": "pain-au-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc4963b"
+  },
+  "name": "The Anatolian Bloom",
+  "description": "Hamper premium yang dirancang dengan estetika mewah, berisikan aneka kue kering pilihan.",
+  "basePrice": 310000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ANATOLIAN-BLOOM-ISI-3.jpg",
+  "slug": "the-anatolian-bloom"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc4963e"
+  },
+  "name": "Sagu Keju",
+  "description": "Perpaduan rasa gurih keju dengan tekstur renyah dari tepung sagu kualitas premium.",
+  "basePrice": 90000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/SAGU-KEJU-1.jpg",
+  "slug": "sagu-keju"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc49643"
+  },
+  "name": "Biscotti Vanilla",
+  "description": "Kue panggang dua kali yang renyah dengan aroma vanilla yang menenangkan.",
+  "basePrice": 100000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BISCOTTI-VANILLA.jpg",
+  "slug": "biscotti-vanilla"
+},
+{
+  "_id": {
+    "$oid": "69f87f746f9a681fdbc49653"
+  },
+  "name": "Salted Caramel",
+  "description": "Es krim karamel dengan sentuhan rasa asin yang menggugah selera.",
+  "basePrice": 25000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Salted-Caramel.jpg",
+  "slug": "salted-caramel"
+},
+{
+  "_id": {
+    "$oid": "69f88ade6f9a681fdbc49677"
+  },
+  "name": "(NEW) Chocolate Cheesecake",
+  "description": "Dessert cup dengan perpaduan cheesecake lembut dan lapisan cokelat yang kaya rasa.",
+  "basePrice": 25000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49660"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/Chocolate-Cheesecake-1.jpg",
+  "slug": "new-chocolate-cheesecake"
+},
+{
+  "_id": {
+    "$oid": "69f88aee6f9a681fdbc49686"
+  },
+  "name": "Chiffon Aren Chocolate",
+  "description": "Perpaduan kelembutan chiffon gula aren khas Garut dengan taburan cokelat yang lezat.",
+  "basePrice": 45000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965e"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e736"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CHIFFON-AREN-CHOCOLATE.jpg",
+  "slug": "chiffon-aren-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f88afb6f9a681fdbc4968c"
+  },
+  "name": "Bolu Pisang Cokelat",
+  "description": "Bolu pisang dengan rasa yang otentik, dipadukan dengan taburan cokelat yang menggugah selera.",
+  "basePrice": 40000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e736"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BOLU-PISANG-COKELAT.jpg",
+  "slug": "bolu-pisang-cokelat"
+},
+{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e784"
+  },
+  "name": "Deluxe Black Forest",
+  "description": "Kue cantik dengan lapisan kue cokelat dan dark cherry pada White Chocolate Cream yang nikmat.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "deluxe-black-forest-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "deluxe-black-forest-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "deluxe-black-forest-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/deluxe-black-forest.jpg",
+  "addOn": [],
+  "slug": "deluxe-black-forest"
+},
+{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e786"
+  },
+  "name": "Red Velvet Maastri",
+  "description": "Kemewahan yang tak dapat dihindari dari Cake Red Velvet yang berlapis Red Velvet Mousse Cheese.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "red-velvet-maastri-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "red-velvet-maastri-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "red-velvet-maastri-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Red-Velvet-Maestri.jpg",
+  "addOn": [],
+  "slug": "red-velvet-maastri"
+},
+{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e78d"
+  },
+  "name": "Duo Chocolate",
+  "description": "Chocolate dilapisi perpaduan Dark dan White Chocolate Cream.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "duo-chocolate-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "duo-chocolate-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "duo-chocolate-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Duo-Chocolate.jpg",
+  "addOn": [],
+  "slug": "duo-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7a2"
+  },
+  "name": "Extraordinary Forest",
+  "description": "Cake istimewa dengan Mousse Vanilla yang creamy dan Blueberry Filling segar.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "extraordinary-forest-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/extraordinary-forest.png",
+  "addOn": [],
+  "slug": "extraordinary-forest"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7a3"
+  },
+  "name": "Choco Berry fantasy",
+  "description": "Kombinasi sempurna dari Sponge Chocolate, Mousse, dan Strawberry Filling yang nikmat.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "choco-berry-fantasy-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Choco-Berry-Fantasy.jpg",
+  "addOn": [],
+  "slug": "choco-berry-fantasy"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7a8"
+  },
+  "name": "Latata",
+  "description": "Paduan sempurna Cake dan Mousse yang tak terlupakan setiap gigitannya.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "latata-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Latata.jpg",
+  "addOn": [],
+  "slug": "latata"
+},
+{
+  "_id": {
+    "$oid": "69f77b31f817ec850dd7e7ab"
+  },
+  "name": "Zolly Chocolate",
+  "description": "Kelezatan sempurna Cake Chocolate berpadu dengan Mousse Chocolate.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Diameter 20 cm",
+      "price": 250000,
+      "img": "zolly-chocolate-diameter-20-cm.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Zolly-Chocolate.webp",
+  "addOn": [],
+  "slug": "zolly-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f77c4af817ec850dd7e7b1"
+  },
+  "name": "Miracle Sharing Duo Chocolate",
+  "description": "Perpaduan cokelat premium dengan tekstur lembut dalam format 36 slice.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77e"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Sharing (36 Slice)",
+      "price": 250000,
+      "size": "20x20 cm",
+      "img": "miracle-sharing-duo-chocolate-sharing-36-slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/MS-Duo-Chocolate.jpg",
+  "addOn": [],
+  "slug": "miracle-sharing-duo-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc4961a"
+  },
+  "name": "Bolu Vanila Keju",
+  "description": "Bolu vanila klasik yang lembut dengan topping keju serut yang melimpah.",
+  "basePrice": 35000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BOLU-VANILA-KEJU.webp",
+  "slug": "bolu-vanila-keju"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc49629"
+  },
+  "name": "(New) Banana Croissant Chocolate",
+  "description": "Perpaduan croissant dengan isian pisang dan cokelat yang manis.",
+  "basePrice": 15000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BANANA-CROISSANT-CHOCOLATE.webp",
+  "slug": "new-banana-croissant-chocolate"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc4962c"
+  },
+  "name": "Butter Croissant Mini",
+  "description": "Butter croissant klasik ukuran mini dengan tekstur yang renyah dan gurih.",
+  "basePrice": 30000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/PLAIN-BUTTER-CROISSANT-MINI-NEW.jpg",
+  "slug": "butter-croissant-mini"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc4963a"
+  },
+  "name": "Royal Tulip",
+  "description": "Hamper eksklusif dengan pilihan kue terbaik, sempurna sebagai hadiah untuk orang tersayang.",
+  "basePrice": 230000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ROYAL-TULIP-ISI-2.jpg",
+  "slug": "royal-tulip"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc49644"
+  },
+  "name": "Chocolate O.G",
+  "description": "Kue kering cokelat orisinil dengan rasa autentik yang bikin nagih.",
+  "basePrice": 100000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CHOCOLATE-O.G.jpg",
+  "slug": "chocolate-og"
+},
+{
+  "_id": {
+    "$oid": "69f88acf6f9a681fdbc4966c"
+  },
+  "name": "Iced Kopi Susu",
+  "description": "Kopi susu klasik dengan rasa yang pas dan menyegarkan.",
+  "basePrice": 20000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49662"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ICED-KOPI-SUSU.jpg",
+  "slug": "iced-kopi-susu"
+},
+{
+  "_id": {
+    "$oid": "69f88ad76f9a681fdbc49676"
+  },
+  "name": "Tiramisusu Piccola Oreo",
+  "description": "Kombinasi tiramisusu yang lembut dengan taburan biskuit Oreo yang renyah dan nikmat.",
+  "basePrice": 45000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49661"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/TIRAMISUSU-PICCOLA-OREO.jpg",
+  "slug": "tiramisusu-piccola-oreo"
+},
+{
+  "_id": {
+    "$oid": "69f88ade6f9a681fdbc49678"
+  },
+  "name": "Chocoberry",
+  "description": "Kombinasi rasa cokelat yang manis dengan sentuhan berry yang segar dalam satu cup dessert.",
+  "basePrice": 20000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49660"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CHOCOBERRY.jpg",
+  "slug": "chocoberry"
+},
+{
+  "_id": {
+    "$oid": "69f88ade6f9a681fdbc4967a"
+  },
+  "name": "Matcha Twice Cheesecake",
+  "description": "Dessert cheesecake dengan sentuhan rasa matcha yang autentik dan aroma teh hijau yang menenangkan.",
+  "basePrice": 25000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49660"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/MATCHA-TWICE.jpg",
+  "slug": "matcha-twice-cheesecake"
+},
+{
+  "_id": {
+    "$oid": "69f88afb6f9a681fdbc49689"
+  },
+  "name": "Chiffon Pisang Almond",
+  "description": "Chiffon lembut dengan rasa pisang khas Tasikmalaya, diperkaya dengan taburan kacang almond renyah di atasnya.",
+  "basePrice": 45000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965d"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e736"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/CHIFFON-PISANG-ALMOND.jpg",
+  "slug": "chiffon-pisang-almond"
+},
+{
+  "_id": {
+    "$oid": "69f7789af817ec850dd7e78f"
+  },
+  "name": "Strawberry Cheesecake",
+  "description": "Disertai lembutnya Cheese Cream dan manisnya Strawberry Filling.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77c"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Large",
+      "price": 250000,
+      "size": "20x20 (12 Slice)",
+      "img": "strawberry-cheesecake-Large.png"
+    },
+    {
+      "type": "Medium",
+      "price": 80000,
+      "size": "10x20 (6 Slice)",
+      "img": "strawberry-cheesecake-Medium.png"
+    },
+    {
+      "type": "Slice",
+      "price": 25000,
+      "size": "Slice",
+      "img": "strawberry-cheesecake-Slice.png"
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/Strawberry-Cheesecake.jpg",
+  "addOn": [],
+  "slug": "strawberry-cheesecake"
+},
+{
+  "_id": {
+    "$oid": "69f827a77ed0548904341753"
+  },
+  "name": "Custom Cake Big 34",
+  "description": "Ukuran ideal untuk acara kumpul-kumpul besar. Dibuat dengan bahan terbaik, memberikan kebebasan desain untuk hasil yang maksimal.",
+  "subcategoryproductId": {
+    "$oid": "69f76e1cf817ec850dd7e77f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "variants": [
+    {
+      "type": "Duo Chocolate",
+      "price": 150000,
+      "img": "duo-chocolato-big34.png"
+    },
+    {
+      "type": "Matcha Souffle",
+      "price": 150000,
+      "img": "matcha-souffle-big34.png"
+    },
+    {
+      "type": "Midnight Blueberry",
+      "price": 150000,
+      "img": "midnight-blueberry-big34.png"
+    },
+    {
+      "type": "Black Amor Crunchy",
+      "price": 150000,
+      "img": "black-amor-crunchy-big34.png"
+    },
+    {
+      "type": "Tiramisu",
+      "price": 150000,
+      "img": "tiramisu-big34.png"
+    },
+    {
+      "type": "Deluxe Black Forest",
+      "price": 150000,
+      "img": "deluxe-black-forest-big34.png"
+    },
+    {
+      "type": "Red Velvet Maestri",
+      "price": 150000,
+      "img": "red-velvet-maestri-big34.png"
+    },
+    {
+      "type": "Truffle Chocolate",
+      "price": 150000,
+      "img": "truffle-chocolate-big34.png"
+    },
+    {
+      "type": "Blueberry Cheesecake",
+      "price": 150000,
+      "img": "blueberry-cheesecake-big34.png"
+    },
+    {
+      "type": "Flamingo Strawberry",
+      "price": 150000,
+      "img": "flamingo-strawberry-big34.png"
+    }
+  ],
+  "addOn": [
+    {
+      "name": "Signature Cake",
+      "price": 100000
+    },
+    {
+      "name": "Edible Cake",
+      "price": 300000
+    }
+  ],
+  "momentIds": [],
+  "image": "/img/menu/custom-cake-big-34.png",
+  "slug": "custom-cake-big-34"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc4961f"
+  },
+  "name": "Brownies Almond",
+  "description": "Brownies cokelat padat dengan taburan almond yang gurih dan renyah.",
+  "basePrice": 65000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BROWNIES-ALMOND1.jpg",
+  "slug": "brownies-almond"
+},
+{
+  "_id": {
+    "$oid": "69f87d026f9a681fdbc49621"
+  },
+  "name": "Brownies Mix Crunchy",
+  "description": "Variasi brownies dengan sensasi topping crunchy yang bikin nagih.",
+  "basePrice": 65000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BROWNIES-MIX-CRUNCHY1.jpg",
+  "slug": "brownies-mix-crunchy"
+},
+{
+  "_id": {
+    "$oid": "69f87e4a6f9a681fdbc49634"
+  },
+  "name": "Almond Chocolate Croissant",
+  "description": "Perpaduan sempurna croissant cokelat dengan taburan almond di atasnya.",
+  "basePrice": 28000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/ALMOND-CHOCOLATE-CROISSANT.jpg",
+  "slug": "almond-chocolate-croissant"
+},
+{
+  "_id": {
+    "$oid": "69f87c6e6f9a681fdbc49610"
+  },
+  "name": "Oreo Swiss Roll Cake",
+  "description": "Perpaduan klasik swiss roll lembut dengan sensasi crunchy dari potongan biskuit Oreo.",
+  "basePrice": 70000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e734"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/SWISS-ROLL-CAKE-OREO.webp",
+  "slug": "oreo-swiss-roll-cake"
+},
+{
+  "_id": {
+    "$oid": "69f87eda6f9a681fdbc4963c"
+  },
+  "name": "Golden Erguvan",
+  "description": "Koleksi hamper terlengkap dari Marmara untuk merayakan momen spesial dengan kemewahan.",
+  "basePrice": 430000,
+  "subcategoryproductId": null,
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/GOLDEN-ERGUVAN-ISI-4.jpg",
+  "slug": "golden-erguvan"
+},
+{
+  "_id": {
+    "$oid": "69f88ade6f9a681fdbc49679"
+  },
+  "name": "Blueberry Lupin Cheesecake",
+  "description": "Cheesecake creamy dengan topping selai blueberry segar yang memberikan sensasi manis dan asam.",
+  "basePrice": 25000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc49660"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BLUEBERRY-LUPIN.jpg",
+  "slug": "blueberry-lupin-cheesecake"
+},
+{
+  "_id": {
+    "$oid": "69f88ae66f9a681fdbc4967b"
+  },
+  "name": "(NEW) Broyo Melon",
+  "description": "Dessert yogurt dengan kesegaran potongan melon asli yang manis dan menyegarkan.",
+  "basePrice": 35000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BROYO-MELON-1536x1536.jpg",
+  "slug": "new-broyo-melon"
+},
+{
+  "_id": {
+    "$oid": "69f88ae66f9a681fdbc4967c"
+  },
+  "name": "(NEW) Broyo Lychee Strawberry",
+  "description": "Perpaduan unik dessert yogurt dengan rasa buah leci dan stroberi yang menggugah selera.",
+  "basePrice": 35000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/BROYO-LYCHEE-STRAWBERRY-1536x1536.jpg",
+  "slug": "new-broyo-lychee-strawberry"
+},
+{
+  "_id": {
+    "$oid": "69f88ae66f9a681fdbc49680"
+  },
+  "name": "(NEW) Bubblegum Choco",
+  "description": "Dessert cup unik dengan perpaduan rasa bubblegum dan cokelat yang manis.",
+  "basePrice": 35000,
+  "subcategoryproductId": {
+    "$oid": "69f886016f9a681fdbc4965f"
+  },
+  "categoryproductId": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "variants": [],
+  "addOn": [],
+  "momentIds": [],
+  "image": "/img/menu/SUNNY-MEAL-BUBBLEGUM-CHOCO.png",
+  "slug": "new-bubblegum-choco"
+},
+{
+  "_id": {
+    "$oid": "6a2e02408a5922a99c96ea2f"
+  },
+  "name": "(New) Excavator Choco",
+  "description": "Meriahkan Momen berharga si kecil dengan Cake Chocolate.",
+  "basePrice": 200000,
+  "categoryproductId": {
+    "$oid": "6a2dfef38a5922a99c96ea19"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2e001f8a5922a99c96ea25"
+  },
+  "variants": [],
+  "momentIds": [],
+  "addOn": [],
+  "slug": "excavator-choco",
+  "image": "/img/menu/EXCAVATOR-CHOCO.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a2e02408a5922a99c96ea2d"
+  },
+  "name": "(New) Kuromi Kawaii",
+  "description": "Temani Momen Ulang Tahun Si Kecil dengan Cake Chocolate.",
+  "basePrice": 200000,
+  "categoryproductId": {
+    "$oid": "6a2dfef38a5922a99c96ea19"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2e001f8a5922a99c96ea25"
+  },
+  "variants": [],
+  "momentIds": [],
+  "addOn": [],
+  "slug": "kuromi-kawaii",
+  "image": "/img/menu/KUROMI-KAWAII.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a2e02408a5922a99c96ea2e"
+  },
+  "name": "(New) Nailong Choco",
+  "description": "Cake Cokelat berkarakter Nailong siap temani ulang tahun si kecil.",
+  "basePrice": 200000,
+  "categoryproductId": {
+    "$oid": "6a2dfef38a5922a99c96ea19"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2e001f8a5922a99c96ea25"
+  },
+  "variants": [],
+  "momentIds": [],
+  "addOn": [],
+  "slug": "nailong-choco",
+  "image": "/img/menu/NAILONG-CHOCO.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a2e02408a5922a99c96ea31"
+  },
+  "name": "(New) Labubu Sweet",
+  "description": "Hadiah istimewa untuk si Kecil Cake Black Forest.",
+  "basePrice": 200000,
+  "categoryproductId": {
+    "$oid": "6a2dfef38a5922a99c96ea19"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2e001f8a5922a99c96ea25"
+  },
+  "variants": [],
+  "momentIds": [],
+  "addOn": [],
+  "slug": "labubu-sweet",
+  "image": "/img/menu/LABUBU-SWEET.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a2e02408a5922a99c96ea30"
+  },
+  "name": "(New) Nussa Rarra",
+  "description": "Sensasi lezatnya Cake Cokelat dalam karakter favorit.",
+  "basePrice": 200000,
+  "categoryproductId": {
+    "$oid": "6a2dfef38a5922a99c96ea19"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2e001f8a5922a99c96ea25"
+  },
+  "variants": [],
+  "momentIds": [],
+  "addOn": [],
+  "slug": "nussa-rarra",
+  "image": "/img/menu/NUSSA-RARRA.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a2e042b8a5922a99c96ea37"
+  },
+  "name": "Tiny Tiger",
+  "description": "Karakter favorit Black Forest berkarakter Harimau.",
+  "basePrice": 130000,
+  "categoryproductId": {
+    "$oid": "6a2dfef38a5922a99c96ea19"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2e00528a5922a99c96ea27"
+  },
+  "variants": [],
+  "momentIds": [],
+  "image": "/img/menu/TINY-TIGER.jpg",
+  "addOn": [],
+  "slug": "tiny-tiger"
+},
+{
+  "_id": {
+    "$oid": "6a2e042b8a5922a99c96ea35"
+  },
+  "name": "Honey Bear",
+  "description": "Cake Chocolate yang nikmat berkarakter Beruang.",
+  "basePrice": 130000,
+  "categoryproductId": {
+    "$oid": "6a2dfef38a5922a99c96ea19"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2e00528a5922a99c96ea27"
+  },
+  "variants": [],
+  "momentIds": [],
+  "image": "/img/menu/HONEY-BEAR.jpg",
+  "addOn": [],
+  "slug": "honey-bear"
+},
+{
+  "_id": {
+    "$oid": "6a2e042b8a5922a99c96ea36"
+  },
+  "name": "Minions",
+  "description": "Karakter favorit Black Forest Cake untuk meriahkan momen spesial si Kecil.",
+  "basePrice": 130000,
+  "categoryproductId": {
+    "$oid": "6a2dfef38a5922a99c96ea19"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2e00528a5922a99c96ea27"
+  },
+  "variants": [],
+  "momentIds": [],
+  "image": "/img/menu/MINIONS.jpg",
+  "addOn": [],
+  "slug": "minions"
+},
+{
+  "_id": {
+    "$oid": "6a2e042b8a5922a99c96ea34"
+  },
+  "name": "Cocomelon",
+  "description": "Imutnya Cake Black Forest karakter.",
+  "basePrice": 130000,
+  "categoryproductId": {
+    "$oid": "6a2dfef38a5922a99c96ea19"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2e00528a5922a99c96ea27"
+  },
+  "variants": [],
+  "momentIds": [],
+  "image": "/img/menu/COCOMELON.jpg",
+  "addOn": [],
+  "slug": "cocomelon"
+},
+{
+  "_id": {
+    "$oid": "6a2f583d74cbd326eb653f7e"
+  },
+  "name": "Edible Photo Big 34 (30x40)",
+  "description": "Custom cetak foto edible ukuran Big 34 (30x40 cm) aman dikonsumsi untuk pelengkap dekorasi kue. Belum termasuk harga cake.",
+  "image": "/img/menu/EDIBLE-BIG-34.jpg",
+  "basePrice": 300000,
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f56b774cbd326eb653f77"
+  },
+  "slug": "edible-photo-big-34-30x40",
+  "variants": [],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f583d74cbd326eb653f7b"
+  },
+  "name": "Edible Photo Medium (10x20)",
+  "description": "Custom cetak foto edible ukuran Medium (10x20 cm) aman dikonsumsi untuk pelengkap dekorasi kue. Belum termasuk harga cake.",
+  "image": "/img/menu/EDIBLE-MEDIUM (2).jpg",
+  "basePrice": 50000,
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f56b774cbd326eb653f77"
+  },
+  "slug": "edible-photo-medium-10x20",
+  "variants": [],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f583d74cbd326eb653f7c"
+  },
+  "name": "Edible Photo Large (20x20)",
+  "description": "Custom cetak foto edible ukuran Large (20x20 cm) aman dikonsumsi untuk pelengkap dekorasi kue. Belum termasuk harga cake.",
+  "image": "/img/menu/EDIBLE-LARGE.jpg",
+  "basePrice": 100000,
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f56b774cbd326eb653f77"
+  },
+  "slug": "edible-photo-large-20x20",
+  "variants": [],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f583d74cbd326eb653f7d"
+  },
+  "name": "Edible Photo Big 24 (20x40)",
+  "description": "Custom cetak foto edible ukuran Big 24 (20x40 cm) aman dikonsumsi untuk pelengkap dekorasi kue. Belum termasuk harga cake.",
+  "image": "/img/menu/EDIBLE-BIG-24.jpg",
+  "basePrice": 200000,
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f56b774cbd326eb653f77"
+  },
+  "slug": "edible-photo-big-24-20x40",
+  "variants": [],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f583d74cbd326eb653f7f"
+  },
+  "name": "Edible Photo Big 46 (40x60)",
+  "description": "Custom cetak foto edible ukuran Big 46 (40x60 cm) aman dikonsumsi untuk pelengkap dekorasi kue. Belum termasuk harga cake.",
+  "image": "/img/menu/EDIBLE-BIG-46.jpg",
+  "basePrice": 600000,
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f56b774cbd326eb653f77"
+  },
+  "slug": "edible-photo-big-46-40x60",
+  "variants": [],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f603174cbd326eb653f96"
+  },
+  "name": "Big Lettering Tiramisu",
+  "description": "Kue Big Lettering varian Tiramisu premium dari Marmara.",
+  "image": "/img/menu/BIG-46-TIRAMISU.jpg",
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "slug": "big-lettering-tiramisu",
+  "variants": [
+    {
+      "type": "Big 24",
+      "size": "20x40",
+      "price": 480000,
+      "img": "/img/menu/tiramisu-big24.jpg"
+    },
+    {
+      "type": "Big 34",
+      "size": "30x40",
+      "price": 960000,
+      "img": "/img/menu/tiramisu-big34.jpg"
+    },
+    {
+      "type": "Big 46",
+      "size": "40x60",
+      "price": 1440000,
+      "img": "/img/menu/tiramisu-big46.jpg"
+    }
+  ],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f603174cbd326eb653f92"
+  },
+  "name": "Big Lettering Duo Chocolate",
+  "description": "Kue Big Lettering varian Duo Chocolate premium dari Marmara.",
+  "image": "/img/menu/BIG-34-DUO-CHOCOLATE.jpg",
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "slug": "big-lettering-duo-chocolate",
+  "variants": [
+    {
+      "type": "Big 24",
+      "size": "20x40",
+      "price": 520000,
+      "img": "/img/menu/duo-chocolate-big24.jpg"
+    },
+    {
+      "type": "Big 34",
+      "size": "30x40",
+      "price": 1040000,
+      "img": "/img/menu/duo-chocolate-big34.jpg"
+    },
+    {
+      "type": "Big 46",
+      "size": "40x60",
+      "price": 1560000,
+      "img": "/img/menu/duo-chocolate-big46.jpg"
+    }
+  ],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f603174cbd326eb653f94"
+  },
+  "name": "Big Lettering Midnight Blueberry",
+  "description": "Kue Big Lettering varian Midnight Blueberry premium dari Marmara.",
+  "image": "/img/menu/BIG-34-MIDNIGHT-BLUEBERRY.jpg",
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "slug": "big-lettering-midnight-blueberry",
+  "variants": [
+    {
+      "type": "Big 24",
+      "size": "20x40",
+      "price": 460000,
+      "img": "/img/menu/midnight-blueberry-big24.jpg"
+    },
+    {
+      "type": "Big 34",
+      "size": "30x40",
+      "price": 920000,
+      "img": "/img/menu/midnight-blueberry-big34.jpg"
+    },
+    {
+      "type": "Big 46",
+      "size": "40x60",
+      "price": 1440000,
+      "img": "/img/menu/midnight-blueberry-big46.jpg"
+    }
+  ],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f603174cbd326eb653f98"
+  },
+  "name": "Big Lettering Red Velvet Maestri",
+  "description": "Kue Big Lettering varian Red Velvet Maestri premium dari Marmara.",
+  "image": "/img/menu/BIG-46-RED-VELVET-MAESTRI.jpg",
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "slug": "big-lettering-red-velvet-maestri",
+  "variants": [
+    {
+      "type": "Big 24",
+      "size": "20x40",
+      "price": 500000,
+      "img": "/img/menu/red-velvet-maestri-big24.jpg"
+    },
+    {
+      "type": "Big 34",
+      "size": "30x40",
+      "price": 1000000,
+      "img": "/img/menu/red-velvet-maestri-big34.jpg"
+    },
+    {
+      "type": "Big 46",
+      "size": "40x60",
+      "price": 1500000,
+      "img": "/img/menu/red-velvet-maestri-big46.jpg"
+    }
+  ],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f603174cbd326eb653f9a"
+  },
+  "name": "Big Lettering Blueberry Cheesecake",
+  "description": "Kue Big Lettering varian Blueberry Cheesecake premium dari Marmara.",
+  "image": "/img/menu/BIG-24-BLUEBERRY-CHEESECAKE.jpg",
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "slug": "big-lettering-blueberry-cheesecake",
+  "variants": [
+    {
+      "type": "Big 24",
+      "size": "20x40",
+      "price": 790000,
+      "img": "/img/menu/blueberry-cheesecake-big24.jpg"
+    },
+    {
+      "type": "Big 34",
+      "size": "30x40",
+      "price": 1580000,
+      "img": "/img/menu/blueberry-cheesecake-big34.jpg"
+    },
+    {
+      "type": "Big 46",
+      "size": "40x60",
+      "price": 2370000,
+      "img": "/img/menu/blueberry-cheesecake-big46.jpg"
+    }
+  ],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f603174cbd326eb653f9b"
+  },
+  "name": "Big Lettering Strawberry Cheesecake",
+  "description": "Kue Big Lettering varian Strawberry Cheesecake premium dari Marmara.",
+  "image": "/img/menu/strawberry-cheesecake.jpg",
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "slug": "big-lettering-strawberry-cheesecake",
+  "variants": [
+    {
+      "type": "Big 24",
+      "size": "20x40",
+      "price": 790000,
+      "img": "/img/menu/strawberry-cheesecake-big24.jpg"
+    },
+    {
+      "type": "Big 34",
+      "size": "30x40",
+      "price": 1580000,
+      "img": "/img/menu/strawberry-cheesecake-big34.jpg"
+    },
+    {
+      "type": "Big 46",
+      "size": "40x60",
+      "price": 2370000,
+      "img": "/img/menu/strawberry-cheesecake-big46.jpg"
+    }
+  ],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f603174cbd326eb653f9c"
+  },
+  "name": "Big Lettering Flamingo Strawberry",
+  "description": "Kue Big Lettering varian Flamingo Strawberry premium dari Marmara.",
+  "image": "/img/menu/BIG-46-FLAMINGO-STRAWBERRY.jpg",
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "slug": "big-lettering-flamingo-strawberry",
+  "variants": [
+    {
+      "type": "Big 24",
+      "size": "20x40",
+      "price": 440000,
+      "img": "/img/menu/flamingo-strawberry-big24.jpg"
+    },
+    {
+      "type": "Big 34",
+      "size": "30x40",
+      "price": 880000,
+      "img": "/img/menu/flamingo-strawberry-big34.jpg"
+    },
+    {
+      "type": "Big 46",
+      "size": "40x60",
+      "price": 1320000,
+      "img": "/img/menu/flamingo-strawberry-big46.jpg"
+    }
+  ],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f603174cbd326eb653f93"
+  },
+  "name": "Big Lettering Matcha Souffle",
+  "description": "Kue Big Lettering varian Matcha Souffle premium dari Marmara.",
+  "image": "/img/menu/BIG-24-MATCHA-SOUFFLE.jpg",
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "slug": "big-lettering-matcha-souffle",
+  "variants": [
+    {
+      "type": "Big 24",
+      "size": "20x40",
+      "price": 480000,
+      "img": "/img/menu/matcha-souffle-big24.jpg"
+    },
+    {
+      "type": "Big 34",
+      "size": "30x40",
+      "price": 960000,
+      "img": "/img/menu/matcha-souffle-big34.jpg"
+    },
+    {
+      "type": "Big 46",
+      "size": "40x60",
+      "price": 1440000,
+      "img": "/img/menu/matcha-souffle-big46.jpg"
+    }
+  ],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f603174cbd326eb653f95"
+  },
+  "name": "Big Lettering Black Amor Crunchy",
+  "description": "Kue Big Lettering varian Black Amor Crunchy premium dari Marmara.",
+  "image": "/img/menu/BIG-24-BLACK-AMOR-CRUNCHY.jpg",
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "slug": "big-lettering-black-amor-crunchy",
+  "variants": [
+    {
+      "type": "Big 24",
+      "size": "20x40",
+      "price": 450000,
+      "img": "/img/menu/black-amor-crunchy-big24.jpg"
+    },
+    {
+      "type": "Big 34",
+      "size": "30x40",
+      "price": 900000,
+      "img": "/img/menu/black-amor-crunchy-big34.jpg"
+    },
+    {
+      "type": "Big 46",
+      "size": "40x60",
+      "price": 1590000,
+      "img": "/img/menu/black-amor-crunchy-big46.jpg"
+    }
+  ],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f603174cbd326eb653f97"
+  },
+  "name": "Big Lettering Deluxe Black Forest",
+  "description": "Kue Big Lettering varian Deluxe Black Forest premium dari Marmara.",
+  "image": "/img/menu/BIG-24-DELUXE-BLACK-FOREST.jpg",
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "slug": "big-lettering-deluxe-black-forest",
+  "variants": [
+    {
+      "type": "Big 24",
+      "size": "20x40",
+      "price": 480000,
+      "img": "/img/menu/deluxe-black-forest-big24.jpg"
+    },
+    {
+      "type": "Big 34",
+      "size": "30x40",
+      "price": 9600000,
+      "img": "/img/menu/deluxe-black-forest-big34.jpg"
+    },
+    {
+      "type": "Big 46",
+      "size": "40x60",
+      "price": 1440000,
+      "img": "/img/menu/deluxe-black-forest-big46.jpg"
+    }
+  ],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f603174cbd326eb653f9d"
+  },
+  "name": "Big Lettering Chocolate Heaven",
+  "description": "Kue Big Lettering varian Chocolate Heaven premium dari Marmara.",
+  "image": "/img/menu/chocolate-heaven.jpg",
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "slug": "big-lettering-chocolate-heaven",
+  "variants": [
+    {
+      "type": "Big 24",
+      "size": "20x40",
+      "price": 500000,
+      "img": "/img/menu/chocolate-heaven-big24.jpg"
+    },
+    {
+      "type": "Big 34",
+      "size": "30x40",
+      "price": 1000000,
+      "img": "/img/menu/chocolate-heaven-big34.jpg"
+    },
+    {
+      "type": "Big 46",
+      "size": "40x60",
+      "price": 1500000,
+      "img": "/img/menu/chocolate-heaven-big46.jpg"
+    }
+  ],
+  "addOn": [],
+  "momentIds": []
+},
+{
+  "_id": {
+    "$oid": "6a2f603174cbd326eb653f99"
+  },
+  "name": "Big Lettering Truffle Chocolate",
+  "description": "Kue Big Lettering varian Truffle Chocolate premium dari Marmara.",
+  "image": "/img/menu/BIG-46-TRUFFLE-CHOCOLATE.jpg",
+  "categoryproductId": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "subcategoryproductId": {
+    "$oid": "6a2f574574cbd326eb653f79"
+  },
+  "slug": "big-lettering-truffle-chocolate",
+  "variants": [
+    {
+      "type": "Big 24",
+      "size": "20x40",
+      "price": 530000,
+      "img": "/img/menu/truffle-chocolate-big24.jpg"
+    },
+    {
+      "type": "Big 34",
+      "size": "30x40",
+      "price": 1060000,
+      "img": "/img/menu/truffle-chocolate-big34.jpg"
+    },
+    {
+      "type": "Big 46",
+      "size": "40x60",
+      "price": 1590000,
+      "img": "/img/menu/truffle-chocolate-big46.jpg"
+    }
+  ],
+  "addOn": [],
+  "momentIds": []
+}]

@@ -1,12 +1,17 @@
+// === Layout Components ===
+import Section from "../components/layouts/Section";
+import Container from "../components/layouts/Container";
+
+// === Third Import ===
 import { motion } from "framer-motion";
-import BrandValues from "../components/BrandValues";
-import Navbar from "../components/Navbar";
-import Tagline from "../components/Tagline";
-import TextSection from "../components/TextSection";
 import { useFetchData } from "../hooks/useFetchData";
 
+// === Components ===
+import BrandValues from "../components/BrandValues";
+import Tagline from "../components/features/Home/Tagline";
+import TextSection from "../components/TextSection";
+
 export default function AboutUs() {
-  // Variasi animasi untuk reveal pas scroll
   const fadeInUp = {
     hidden: { opacity: 0, y: 40 },
     visible: {
@@ -15,20 +20,20 @@ export default function AboutUs() {
       transition: { duration: 0.8, ease: "easeOut" },
     },
   };
-
   const { data: brandvalues, loading } = useFetchData("brandvalue");
 
   return (
     <>
-      <Navbar />
-
-      {/* 1. Hero Section: Animasi Fade In & Scale pas baru buka */}
-      <section className="relative w-full h-screen flex items-center justify-center bg-marmara-deepTeal/5 overflow-hidden">
+      {/* 1. Hero Section */}
+      <Section
+        isHero
+        className="relative w-full h-screen flex items-center justify-center bg-marmara-deepTeal/5 overflow-hidden"
+      >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
-          className="z-10 text-center" // HAPUS h-screen DI SINI
+          className="z-10 text-center flex flex-col gap-6"
         >
           <div className="flex justify-center">
             <motion.img
@@ -37,116 +42,112 @@ export default function AboutUs() {
               transition={{ delay: 0.5, duration: 0.8 }}
               src="/img/logoMarmaraTeal.png"
               alt="Marmara Logo"
-              className="w-auto h-12 md:h-16 mb-6"
+              className="w-auto h-12 md:h-16 "
             />
           </div>
           <Tagline />
         </motion.div>
-        {/* Gradient */}
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/5 to-transparent"></div>
-      </section>
+      </Section>
 
       {/* 2. Parallax Divider */}
-      <div className="w-full h-48 md:h-80 lg:h-56 bg-[url(/img/turki.png)] bg-cover bg-center bg-no-repeat bg-scroll lg:bg-fixed lg:bg-[position:0%_0%]" />
+      <div className="w-full h-48 md:h-80 lg:h-56 bg-[url(/img/turki.png)] bg-cover bg-center bg-no-repeat bg-scroll lg:bg-fixed lg:bg-position-[0%_0%]" />
 
-      {/* 3. Marmara Way Section: Scroll Reveal */}
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={fadeInUp}
-        className="pt-16 pb-12 flex flex-col items-center bg-white"
-      >
-        <TextSection
-          title="Marmara Way"
-          subtitle="More Than Just Cake, We Share Happiness."
-        />
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={fadeInUp}
-          className="max-w-4xl flex flex-col gap-6 px-8 md:px-10 text-base leading-relaxed text-marmara-neutral/80"
-        >
-          <p>
-            Marmara Delightful Cake is a cake shop dedicated to creating sweet
-            moments for every celebration. From weddings, birthdays, and
-            corporate events to thoughtful gifts for loved ones and colleagues,
-            our cakes are made to bring people closer through happiness and
-            togetherness.
-          </p>
+      {/* 3. Marmara Way Section */}
+      <Section className="flex flex-col items-center">
+        <Container>
+          <div className="flex flex-col gap-12">
+            <TextSection
+              title="Marmara Way"
+              subtitle="Lebih dari Sekadar Kue, Kami Berbagi Kebahagiaan."
+            />
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeInUp}
+              className="max-w-4xl flex flex-col gap-6 text-base leading-relaxed text-text-site"
+            >
+              <p>
+                Marmara Delightful Cake adalah toko kue yang didedikasikan untuk
+                menciptakan momen manis di setiap perayaan. Mulai dari
+                pernikahan, ulang tahun, acara perusahaan, hingga hadiah spesial
+                untuk orang tercinta dan rekan kerja, kue kami hadir untuk
+                mendekatkan setiap orang melalui kebahagiaan dan kebersamaan.
+              </p>
 
-          <p>
-            We are committed to serving premium-quality cakes at affordable
-            prices, allowing more people to enjoy and share special moments with
-            those they care about. This commitment became the foundation of our
-            “affordable premium” concept — elegant cakes with exceptional
-            quality that remain accessible to everyone.
-          </p>
+              <p>
+                Kami berkomitmen untuk menyajikan kue berkualitas premium dengan
+                harga yang terjangkau, sehingga lebih banyak orang dapat
+                menikmati dan berbagi momen spesial bersama mereka yang berarti.
+                Komitmen inilah yang menjadi fondasi utama dari konsep
+                “affordable premium” kami — kue elegan dengan kualitas luar
+                biasa yang tetap dapat diakses oleh semua kalangan.
+              </p>
 
-          <p>
-            Established in 2017 by Resa Darusman and Shelly Agustianti, Marmara
-            Delightful Cake later underwent a rebranding process in 2021
-            together with Wahyu Soekirno bawah PT Marmara Selaras Indonesia.
-          </p>
-          <motion.img
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-            src="/img/STORE-BANJAR.png"
-            alt="Marmara Store Banjar"
-            className="rounded-3xl mt-6 shadow-lg border border-marmara-lightGrey cursor-pointer"
-          />
-        </motion.div>
+              <p>
+                Didirikan pada tahun 2017 oleh Resa Darusman dan Shelly
+                Agustianti, Marmara Delightful Cake kemudian melakukan proses
+                rebranding pada tahun 2021 bersama Wahyu Soekirno di bawah
+                naungan PT Marmara Selaras Indonesia.
+              </p>
+              <motion.img
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-100px" }}
+                variants={fadeInUp}
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                src="/img/STORE-BANJAR.png"
+                alt="Marmara Store Banjar"
+                className="rounded-3xl mt-6 shadow-lg border border-marmara-lightGrey cursor-pointer"
+              />
+            </motion.div>
+          </div>
+        </Container>
+      </Section>
 
-        {/* Hover Effect pada Gambar Store */}
-      </motion.section>
-
-      {/* 4. Brand Story Section: Slide in from Left & Right */}
-      <section className="relative overflow-hidden pt-20 pb-20 flex flex-col lg:flex-row items-center ">
-        {/* KONTEN TEKS: Slide from Left */}
+      {/* 4. Brand Story Section */}
+      <Section className="overflow-hidden flex flex-col lg:flex-row items-center bg-bg-section-2/10">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="w-full lg:w-3/5 lg:pl-20 flex flex-col"
+          className="w-full lg:w-3/5 lg:pl-40 flex flex-col gap-12"
         >
-          <div className="px-10">
-            <TextSection
-              title="Brand Story"
-              subtitle="Elegant Taste, Accessible to All."
-              className="!items-start !text-left"
-            />
-          </div>
+          <TextSection
+            title="Brand Story"
+            subtitle="Cita Rasa Elegan yang Dapat Dinikmati Semua Orang."
+          />
 
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col px-10 gap-5 text-base leading-relaxed text-marmara-neutral/80"
+            className="max-w-2xl flex flex-col gap-5 text-base leading-relaxed text-text-site"
           >
             <p>
-              The name{" "}
-              <span className="font-bold text-marmara-teal">“Marmara”</span> was
-              inspired by the colorful and beautiful Marmara region of Turkey,
-              known for its breathtaking scenery and vibrant atmosphere. This
-              inspiration is reflected in every cake we create — beautifully
-              layered, visually delightful, and rich in flavor.
+              Nama{" "}
+              <span className="font-bold text-btn-secondary-text">
+                “Marmara”
+              </span>{" "}
+              terinspirasi dari wilayah Marmara di Turki yang indah dan penuh
+              warna, yang dikenal karena pemandangannya yang memukau serta
+              suasananya yang hidup. Inspirasi ini tercermin di setiap kue yang
+              kami buat — berlapis indah, memanjakan mata, dan kaya akan cita
+              rasa.
             </p>
 
             <p>
-              To maintain trust and quality, Marmara Delightful Cake is
-              officially certified with P-IRT, registered trademark rights
-              (HAKI), and Halal certification.
+              Untuk menjaga kepercayaan dan kualitas, Marmara Delightful Cake
+              telah resmi bersertifikat P-IRT, terdaftar hak kekayaan
+              intelektual (HAKI), serta memiliki sertifikasi Halal.
             </p>
 
             <p>
-              Today, Marmara Delightful Cake has expanded to several cities
+              Kini, Marmara Delightful Cake telah berkembang ke beberapa kota
               termasuk{" "}
               <span className="font-semibold italic">
                 Banjar, Ciamis, Tasikmalaya, Majenang, dan Bandung
@@ -169,30 +170,30 @@ export default function AboutUs() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="w-full lg:w-2/5 flex justify-end mt-12 lg:mt-0"
-        >
+          className="w-full lg:w-2/5 "
+        ></motion.div>
+        <div className="flex justify-end">
           <motion.img
             whileHover={{ scale: 1.05, rotate: -1 }}
             src="/img/firstMarmara.jpg"
             alt="Marmara First Store"
-            className="w-[90%] md:w-[70%] lg:w-full h-auto rounded-l-4xl lg:rounded-r-none shadow-2xl object-cover transition-shadow hover:shadow-marmara-teal/20"
+            className="w-[90%] md:w-[70%] lg:w-full h-auto rounded-l-4xl lg:rounded-r-none shadow-2xl object-cover transition-shadow hover:shadow-marmara-teal/20 mt-10 "
           />
-        </motion.div>
-      </section>
+        </div>
+      </Section>
 
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={fadeInUp}
-        className="pt-10 md:pt-16 lg:pt-24 pb-5 md:pb-8 lg:pb-12 bg-[#FAFAFA]"
-      >
-        <TextSection
-          title="Brand Values"
-          subtitle="Committed to delivering honest, halal, and premium delights for every meaningful moment."
-        />
-        <BrandValues data={brandvalues} loading={loading} />
-      </motion.section>
+      {/* 5. Brand Values */}
+      <Section>
+        <Container>
+          <div className="flex flex-col gap-12">
+            <TextSection
+              title="Brand Values"
+              subtitle="Berkomitmen untuk menghadirkan kelezatan yang jujur, halal, dan premium di setiap momen berhargamu."
+            />
+            <BrandValues data={brandvalues} loading={loading} />
+          </div>
+        </Container>
+      </Section>
     </>
   );
 }

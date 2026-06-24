@@ -1,0 +1,108 @@
+[{
+  "_id": {
+    "$oid": "69f76c33f817ec850dd7e735"
+  },
+  "name": "Cake In Box",
+  "slug": "cake-in-box",
+  "description": "Kue praktis dalam kotak, cocok untuk dinikmati kapan saja.",
+  "image": "/img/categories/cake-in-box.jpg"
+},
+{
+  "_id": {
+    "$oid": "69f76c33f817ec850dd7e736"
+  },
+  "name": "Oleh-Oleh Marmara",
+  "slug": "oleh-oleh-marmara",
+  "description": "Pilihan buah tangan khas Marmara yang cocok untuk kerabat.",
+  "image": "/img/categories/oleh-oleh-marmara.jpg"
+},
+{
+  "_id": {
+    "$oid": "69f76c33f817ec850dd7e737"
+  },
+  "name": "Dessert",
+  "slug": "dessert",
+  "description": "Aneka hidangan penutup manis untuk memanjakan lidah.",
+  "image": "/img/categories/dessert.jpg"
+},
+{
+  "_id": {
+    "$oid": "69f76c33f817ec850dd7e738"
+  },
+  "name": "Pastry",
+  "slug": "pastry",
+  "description": "Berbagai olahan pastry renyah dan gurih khas bakery.",
+  "image": "/img/categories/pastry.jpg"
+},
+{
+  "_id": {
+    "$oid": "69f76c33f817ec850dd7e73b"
+  },
+  "name": "Beverage",
+  "slug": "beverage",
+  "description": "Minuman segar pendamping setia koleksi kue Marmara.",
+  "image": "/img/categories/beverage.jpg"
+},
+{
+  "_id": {
+    "$oid": "69f76c33f817ec850dd7e73a"
+  },
+  "name": "Cookies & Hampers",
+  "slug": "cookies-and-hampers",
+  "description": "Kue kering lezat dalam kemasan menarik, cocok untuk hadiah.",
+  "image": "/img/categories/cookies-and-hampers.jpg"
+},
+{
+  "_id": {
+    "$oid": "69f76c33f817ec850dd7e73c"
+  },
+  "name": "Ice Cream",
+  "slug": "ice-cream",
+  "description": "Es krim lembut dengan rasa yang menyegarkan dan memanjakan.",
+  "image": "/img/categories/ice-cream.jpg"
+},
+{
+  "_id": {
+    "$oid": "69f76c33f817ec850dd7e733"
+  },
+  "name": "Delightful Cake",
+  "slug": "delightful-cake",
+  "description": "Koleksi kue premium dengan cita rasa istimewa untuk momen berharga.",
+  "image": "/img/categories/delightful-cake.jpg"
+},
+{
+  "_id": {
+    "$oid": "69f76c33f817ec850dd7e734"
+  },
+  "name": "Swiss Roll Cake",
+  "slug": "swiss-roll-cake",
+  "description": "Gulungan kue lembut dengan isian krim dan selai pilihan.",
+  "image": "/img/categories/swiss-roll-cake.jpg"
+},
+{
+  "_id": {
+    "$oid": "69f76c33f817ec850dd7e739"
+  },
+  "name": "Viennoiserie",
+  "slug": "viennoiserie",
+  "description": "Pilihan roti ala Eropa dengan tekstur *buttery* yang sempurna.",
+  "image": "/img/categories/viennoiserie.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a2df8cb8a5922a99c96ea15"
+  },
+  "name": "Custom Cake",
+  "slug": "custom-cake",
+  "description": "Custom aja cake-mu di Marmara! Tambahin ucapan atau foto kenangan biar makin bermakna. Customizable, delicious, and made with love",
+  "image": "/img/categories/custom-cake.jpg"
+},
+{
+  "_id": {
+    "$oid": "6a2dfef38a5922a99c96ea19"
+  },
+  "name": "Kids Series",
+  "slug": "kids-series",
+  "description": "Koleksi kue dengan dekorasi karakter lucu dan warna-warni menggemaskan, diracik khusus untuk memeriahkan hari ulang tahun dan momen spesial si kecil.",
+  "image": "/img/categories/kids-series.jpg"
+}]

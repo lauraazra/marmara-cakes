@@ -1,0 +1,51 @@
+[{
+  "_id": "6646a111b1a23c880011aaaa",
+  "name": "Our Menu",
+  "slug": "our-menu",
+  "createdAt": {
+    "$timestamp": {
+      "t": 0,
+      "i": 0
+    }
+  },
+  "updatedAt": {
+    "$timestamp": {
+      "t": 0,
+      "i": 0
+    }
+  }
+},
+{
+  "_id": "6646a222b1a23c880011bbbb",
+  "name": "Event & Promo",
+  "slug": "event-promo",
+  "createdAt": {
+    "$timestamp": {
+      "t": 0,
+      "i": 0
+    }
+  },
+  "updatedAt": {
+    "$timestamp": {
+      "t": 0,
+      "i": 0
+    }
+  }
+},
+{
+  "_id": "6646a333b1a23c880011cccc",
+  "name": "Momen Spesial",
+  "slug": "momen-spesial",
+  "createdAt": {
+    "$timestamp": {
+      "t": 0,
+      "i": 0
+    }
+  },
+  "updatedAt": {
+    "$timestamp": {
+      "t": 0,
+      "i": 0
+    }
+  }
+}]
