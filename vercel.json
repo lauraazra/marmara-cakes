@@ -11,9 +11,6 @@
       "config": { "distDir": "dist" }
     }
   ],
-  "env": {
-    "MONGO_URI": "@mongo_uri"
-  },
   "rewrites": [
     {
       "source": "/api/(.*)",
