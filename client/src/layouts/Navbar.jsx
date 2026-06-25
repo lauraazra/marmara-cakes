@@ -64,7 +64,7 @@ export default function Navbar() {
 
         {/* 2. LINKS AREA (NAVBAR MENU) */}
         <div
-          className={`fixed top-0 right-0 h-full w-2/3 bg-card-site z-50 p-10 transition-transform duration-500 ease-in-out shadow-2xl md:w-full ${
+          className={`fixed top-0 right-0 h-full w-2/3 bg-marmara-deep-teal dark:bg-marmara-teal z-50 p-10 transition-transform duration-500 ease-in-out shadow-2xl md:w-full ${
             menuOpen
               ? "translate-x-0 md:translate-y-0"
               : "translate-x-full md:translate-x-0 md:-translate-y-full"
