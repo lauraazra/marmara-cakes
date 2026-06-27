@@ -108,13 +108,13 @@ export default function AboutUs() {
       </Section>
 
       {/* 4. Brand Story Section */}
-      <Section className="overflow-hidden flex flex-col lg:flex-row items-center bg-bg-section-2/10">
+      <Section className="overflow-hidden flex flex-col lg:flex-row items-center bg-bg-section-2/10 py-16 lg:py-24 gap-12 lg:gap-0">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="w-full lg:w-3/5 lg:pl-40 flex flex-col gap-12"
+          className="w-full lg:w-3/5 px-6 md:px-12 lg:pl-24 lg:pr-12 flex flex-col gap-8 md:gap-12"
         >
           <TextSection
             title="Brand Story"
@@ -126,7 +126,7 @@ export default function AboutUs() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="max-w-2xl flex flex-col gap-5 text-base leading-relaxed text-text-site"
+            className="max-w-2xl flex flex-col gap-5 text-sm md:text-base leading-relaxed text-text-site"
           >
             <p>
               Nama{" "}
@@ -158,7 +158,7 @@ export default function AboutUs() {
             <motion.p
               animate={{ color: ["#008080", "#c5a059", "#008080"] }}
               transition={{ duration: 4, repeat: Infinity }}
-              className="font-serif italic text-marmara-teal text-lg mt-4"
+              className="font-serif italic text-marmara-teal text-base md:text-lg mt-4"
             >
               Spark Your Happiness, Enjoy Every Moment!
             </motion.p>
@@ -170,16 +170,15 @@ export default function AboutUs() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="w-full lg:w-2/5 "
-        ></motion.div>
-        <div className="flex justify-end">
+          className="w-full lg:w-2/5 flex justify-end pl-6 lg:pl-0"
+        >
           <motion.img
             whileHover={{ scale: 1.05, rotate: -1 }}
             src="/img/firstMarmara.jpg"
             alt="Marmara First Store"
-            className="w-[90%] md:w-[70%] lg:w-full h-auto rounded-l-4xl lg:rounded-r-none shadow-2xl object-cover transition-shadow hover:shadow-marmara-teal/20 mt-10 "
+            className="w-full h-[300px] md:h-[450px] lg:h-[550px] rounded-l-2xl md:rounded-l-4xl lg:rounded-r-none shadow-2xl object-cover transition-shadow hover:shadow-marmara-teal/20"
           />
-        </div>
+        </motion.div>
       </Section>
 
       {/* 5. Brand Values */}

@@ -37,7 +37,7 @@ export default function StickyCartBar() {
 
     daftarPesanan +=
       `*TOTAL AKHIR: Rp ${totalPrice.toLocaleString("id-ID")}*\n\n` +
-      `Mohon dibantu proses ya, Bre!`;
+      `Mohon dibantu proses min!`;
 
     clearCart();
     setIsCartModalOpen(false);
