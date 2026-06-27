@@ -47,7 +47,7 @@ export default function AboutUs() {
           </div>
           <Tagline />
         </motion.div>
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/5 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-linear-to-t from-black/5 to-transparent"></div>
       </Section>
 
       {/* 2. Parallax Divider */}
@@ -176,7 +176,7 @@ export default function AboutUs() {
             whileHover={{ scale: 1.05, rotate: -1 }}
             src="/img/firstMarmara.jpg"
             alt="Marmara First Store"
-            className="w-full h-[300px] md:h-[450px] lg:h-[550px] rounded-l-2xl md:rounded-l-4xl lg:rounded-r-none shadow-2xl object-cover transition-shadow hover:shadow-marmara-teal/20"
+            className="w-full h-75 md:h-112.5 lg:h-137.5 rounded-l-2xl md:rounded-l-4xl lg:rounded-r-none shadow-2xl object-cover transition-shadow hover:shadow-marmara-teal/20"
           />
         </motion.div>
       </Section>

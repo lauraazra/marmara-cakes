@@ -152,7 +152,7 @@ export default function StickyCartBar() {
                         >
                           -
                         </button>
-                        <span className="px-2 text-center font-bold text-text-site text-xs min-w-[18px]">
+                        <span className="px-2 text-center font-bold text-text-site text-xs min-w-4.5">
                           {item.quantity}
                         </span>
                         <button
