@@ -176,13 +176,12 @@ app.post("/api/tanya-ai", async (req, res) => {
       });
 
     // 1. Ambil Database
-    const [products, articles, faqs] = await Promise.all([
+    const [products, faqs] = await Promise.all([
       Product.find().select("name description basePrice variants").lean(),
-      Article.find({ status: "published" }).select("title excerpt").lean(),
       FAQ.find().select("question answer").lean(),
     ]);
 
-    // 2. Olah Detail Produk Kue
+    // 2. Olah Detail Produk
     let infoProdukMarmara = "DAFTAR MENU & DETAIL PRODUK KUE:\n";
     products.forEach((prod, index) => {
       infoProdukMarmara += `${index + 1}. Nama Kue: ${prod.name || "Menu Marmara"}\n`;
@@ -203,21 +202,14 @@ app.post("/api/tanya-ai", async (req, res) => {
       infoProdukMarmara += "\n";
     });
 
-    // 3. Olah Artikel
-    let infoBlogMarmara = "ARTIKEL BLOG MARMARA:\n";
-    articles.forEach((art, index) => {
-      infoBlogMarmara += `${index + 1}. Judul: ${art.title}\n`;
-      infoBlogMarmara += `   Ringkasan: ${art.excerpt || "Tidak ada ringkasan."}\n\n`;
-    });
-
-    // 4. Olah Data FAQ
+    // 3. Olah Data FAQ
     let infoFaqMarmara = "PERTANYAAN UMUM (FAQ) & KEBIJAKAN TOKO:\n";
     faqs.forEach((faq, index) => {
       infoFaqMarmara += `${index + 1}. Pertanyaan: ${faq.question}\n`;
       infoFaqMarmara += `   Jawaban Resmi: ${faq.answer}\n\n`;
     });
 
-    // 5. AI Instructions
+    // 4. AI Instructions
     const systemInstruction = `Kamu adalah "Mara AI", asisten digital dan customer care resmi untuk "Marmara Cakes". Karakter kamu adalah sosok yang sangat ramah, sopan, profesional, namun tetap membumi (humble) serta tulus dalam melayani pelanggan.
 
 Tugas utama kamu adalah menjawab segala pertanyaan pelanggan tentang Marmara Cakes secara akurat berdasarkan data asli toko yang disediakan di bawah ini.
@@ -239,18 +231,16 @@ INFORMASI PESANAN ONLINE / ORDER ONLINE:
 
 ${infoProdukMarmara}
 
-${infoBlogMarmara}
-
 ${infoFaqMarmara}
 
 ATURAN WAJIB MARA AI DALAM MENJAWAB:
 1. Sapa pelanggan dengan panggilan yang santun dan hangat seperti "Kakak", "Anda", atau "Happiness Seekers".
 2. JANGAN PERNAH menggunakan kata gaul, kasar, atau slang jalanan seperti "Bre", "Gua", "Lu", "Bro", atau "Cuy". Gunakan kata ganti "Mara" untuk menyebut dirimu sendiri.
 3. Jika pelanggan bertanya tentang harga kue, deskripsi rasa kue, atau varian ukuran, ambil data dari DAFTAR MENU & DETAIL PRODUK secara presisi. Jangan pernah memanipulasi atau mengarang harga nominal!
-4. Jika pelanggan bertanya tentang ketahanan kue, status halal, tata cara refund, pengiriman, pisau/lilin, atau pengajuan kemitraan, baca dan jawab secara eksklusif mengikuti data resmi PERTANYAAN UMUM (FAQ) & KEBIJAKAN TOKO.
+4. Jika pelanggan bertanya tentang ketahanan kue, status halal, tata cara refund, pengiriman, pisau/lilin, atau pengajuan kemitraan, baca dan jawab secara Hiking eksklusif mengikuti data resmi PERTANYAAN UMUM (FAQ) & KEBIJAKAN TOKO.
 5. Jika pertanyaan melenceng jauh di luar konteks toko kue Marmara Cakes, tolaklah dengan bahasa yang sangat halus, sopan, dan arahkan kembali mereka dengan menawarkan bantuan seputar produk kue Marmara.`;
 
-    // 6. Pemanggilan Menggunakan Struktur Object Sesuai SDK Terbaru @google/genai
+    // 5. Pemanggilan Menggunakan Struktur Object Sesuai SDK Terbaru @google/genai
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
       contents: [{ role: "user", parts: [{ text: question }] }],
@@ -260,7 +250,7 @@ ATURAN WAJIB MARA AI DALAM MENJAWAB:
       },
     });
 
-    // 7. Response to front-end
+    // 6. Response ke front-end
     res.json({ reply: response.text });
   } catch (err) {
     console.error("Error Detail dari Mara AI:", err);
