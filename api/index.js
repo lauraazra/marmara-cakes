@@ -169,46 +169,24 @@ app.get("/api/faqs", async (req, res) => {
 app.post("/api/tanya-ai", async (req, res) => {
   try {
     const { question } = req.body;
-    if (!question) {
+    if (!question)
       return res.json({
         reply:
           "Mohon maaf, Anda belum memasukkan pertanyaan. Silakan ketikkan sesuatu ya.",
       });
-    }
 
-    // 1. Ambil data
-    const [products, subcategories, categories, catArticles, articles, faqs] =
-      await Promise.all([
-        Product.find()
-          .select("name description basePrice variants subcategoryproductId")
-          .lean(),
-        SubCategoryProduct.find().lean(),
-        CategoryProduct.find().select("name description").lean(),
-        CategoryArticle.find().lean(),
-        Article.find({ status: "published" })
-          .select("title excerpt categoryArticle")
-          .lean(),
-        FAQ.find().select("question category answer").lean(),
-      ]);
+    // 1. Ambil Database
+    const [products, articles, faqs] = await Promise.all([
+      Product.find().select("name description basePrice variants").lean(),
+      Article.find({ status: "published" }).select("title excerpt").lean(),
+      FAQ.find().select("question answer").lean(),
+    ]);
 
-    // 2. Olah Kategori Produk Utama
-    let infoKategoriProduk = "KATEGORI UTAMA DI MARMARA CAKES:\n";
-    categories.forEach((cat, index) => {
-      infoKategoriProduk += `${index + 1}. Kategori: ${cat.name || "Kategori"}\n Deskripsi: ${cat.description || ""}\n\n`;
-    });
-
-    // 3. Olah Detail Produk Kue
+    // 2. Olah Detail Produk Kue
     let infoProdukMarmara = "DAFTAR MENU & DETAIL PRODUK KUE:\n";
     products.forEach((prod, index) => {
-      const subIdTarget = prod.subcategoryproductId?.toString() || "";
-
-      const namaSub =
-        subcategories.find((s) => {
-          const sId = s._id?.toString() || "";
-          return sId && subIdTarget && sId === subIdTarget;
-        })?.name || "Lainnya";
-
-      infoProdukMarmara += `${index + 1}. Nama Kue: ${prod.name}\n Subkategori: ${namaSub}\n Deskripsi: ${prod.description || ""}\n`;
+      infoProdukMarmara += `${index + 1}. Nama Kue: ${prod.name || "Menu Marmara"}\n`;
+      infoProdukMarmara += `   Deskripsi Kue: ${prod.description || "Tidak ada deskripsi."}\n`;
 
       if (prod.basePrice) {
         infoProdukMarmara += `   Harga Dasar: Rp ${prod.basePrice.toLocaleString("id-ID")}\n`;
@@ -217,7 +195,7 @@ app.post("/api/tanya-ai", async (req, res) => {
       if (prod.variants && prod.variants.length > 0) {
         infoProdukMarmara += `   Varian Ukuran & Harga:\n`;
         prod.variants.forEach((v) => {
-          if (v.price) {
+          if (v && v.price) {
             infoProdukMarmara += `     - Tipe: ${v.type}, Ukuran: ${v.size || "Standar"}, Harga: Rp ${v.price.toLocaleString("id-ID")}\n`;
           }
         });
@@ -225,34 +203,28 @@ app.post("/api/tanya-ai", async (req, res) => {
       infoProdukMarmara += "\n";
     });
 
-    // 4. Olah Artikel
-    let infoBlogMarmara = "ARTIKEL MARMARA:\n";
+    // 3. Olah Artikel
+    let infoBlogMarmara = "ARTIKEL BLOG MARMARA:\n";
     articles.forEach((art, index) => {
-      const catArtIdTarget = art.categoryArticle?.toString() || "";
-
-      const namaKategoriArt =
-        catArticles.find((c) => {
-          const cId = c._id?.toString() || "";
-          return cId && catArtIdTarget && cId === catArtIdTarget;
-        })?.name || "Umum";
-
-      infoBlogMarmara += `${index + 1}. Judul: ${art.title}\n Kategori: ${namaKategoriArt}\n Ringkasan: ${art.excerpt || ""}\n\n`;
+      infoBlogMarmara += `${index + 1}. Judul: ${art.title}\n`;
+      infoBlogMarmara += `   Ringkasan: ${art.excerpt || "Tidak ada ringkasan."}\n\n`;
     });
 
-    // 5. Olah Data FAQ
+    // 4. Olah Data FAQ
     let infoFaqMarmara = "PERTANYAAN UMUM (FAQ) & KEBIJAKAN TOKO:\n";
     faqs.forEach((faq, index) => {
-      infoFaqMarmara += `${index + 1}. Pertanyaan: ${faq.question}\n Kategori: ${faq.category}\n Jawaban Resmi: ${faq.answer}\n\n`;
+      infoFaqMarmara += `${index + 1}. Pertanyaan: ${faq.question}\n`;
+      infoFaqMarmara += `   Jawaban Resmi: ${faq.answer}\n\n`;
     });
 
-    // 6. AI Instructions
-    const systemInstruction = `Kamu adalah "Mara AI", asisten digital dan customer care resmi untuk "Marmara Cakes". Karakter kamu ramah, sopan, profesional, namun tetap humble. Sebut dirimu "Mara" dan sapa pelanggan dengan panggilan "Kakak" atau "Happiness Seekers".
+    // 5. AI Instructions
+    const systemInstruction = `Kamu adalah "Mara AI", asisten digital dan customer care resmi untuk "Marmara Cakes". Karakter kamu adalah sosok yang sangat ramah, sopan, profesional, namun tetap membumi (humble) serta tulus dalam melayani pelanggan.
 
-Tugas utama kamu adalah menjawab segala pertanyaan pelanggan tentang Marmara Cakes secara akurat berdasarkan data asli toko yang disediakan di bawah ini. JANGAN PERNAH mengarang data, harga, atau kebijakan di luar data ini!
+Tugas utama kamu adalah menjawab segala pertanyaan pelanggan tentang Marmara Cakes secara akurat berdasarkan data asli toko yang disediakan di bawah ini.
 
 INFORMASI OPERASIONAL TOKO:
 - Jam Buka: Setiap hari jam 08.00 pagi sampai 21.00 malam.
-      
+
 INFORMASI ALAMAT TOKO:
 - Bandung: Jl. Komud Supadio No. 16
 - Tasikmalaya: Jl. Dr. Soekardjo No.77
@@ -263,19 +235,22 @@ INFORMASI ALAMAT TOKO:
 
 INFORMASI PESANAN ONLINE / ORDER ONLINE:
 - VIA GOFOOD, GRABFOOD, DAN SHOPEEFOOD
-- Chat WhatsApp Admin Mima: https://web.whatsapp.com/send/?phone=628111803344
+- Chat WhatsApp Admin Mima: [Klik di Sini untuk Chat WhatsApp](https://web.whatsapp.com/send/?phone=628111803344&text=Halo+Mima+%28Admin+Marmara%29%2C&type=phone_number&app_absent=0)
 
-${infoKategoriProduk}
 ${infoProdukMarmara}
+
 ${infoBlogMarmara}
+
 ${infoFaqMarmara}
 
-ATURAN WAJIB MARA AI:
-1. JANGAN PERNAH menggunakan kata gaul, kasar, atau slang seperti "Bre", "Gua", "Lu", "Bro", atau "Cuy".
-2. Jika pelanggan bertanya tentang ketahanan kue, status halal, refund, pengiriman, pisau/lilin, baca dan jawab secara eksklusif mengikuti data PERTANYAAN UMUM (FAQ) di atas.
-3. Jika pertanyaan di luar konteks atau data tidak ditemukan pada teks di atas, tolak dengan sangat halus: "Mohon maaf, Mara belum berhasil menemukan informasi tersebut saat ini. Ada hal lain yang bisa Mara bantu seputar produk kue Marmara?"`;
+ATURAN WAJIB MARA AI DALAM MENJAWAB:
+1. Sapa pelanggan dengan panggilan yang santun dan hangat seperti "Kakak", "Anda", atau "Happiness Seekers".
+2. JANGAN PERNAH menggunakan kata gaul, kasar, atau slang jalanan seperti "Bre", "Gua", "Lu", "Bro", atau "Cuy". Gunakan kata ganti "Mara" untuk menyebut dirimu sendiri.
+3. Jika pelanggan bertanya tentang harga kue, deskripsi rasa kue, atau varian ukuran, ambil data dari DAFTAR MENU & DETAIL PRODUK secara presisi. Jangan pernah memanipulasi atau mengarang harga nominal!
+4. Jika pelanggan bertanya tentang ketahanan kue, status halal, tata cara refund, pengiriman, pisau/lilin, atau pengajuan kemitraan, baca dan jawab secara eksklusif mengikuti data resmi PERTANYAAN UMUM (FAQ) & KEBIJAKAN TOKO.
+5. Jika pertanyaan melenceng jauh di luar konteks toko kue Marmara Cakes, tolaklah dengan bahasa yang sangat halus, sopan, dan arahkan kembali mereka dengan menawarkan bantuan seputar produk kue Marmara.`;
 
-    // 7. Pemanggilan Resmi Sesuai Aturan Terbaru SDK dengan format Object murni
+    // 6. Pemanggilan Menggunakan Struktur Object Sesuai SDK Terbaru @google/genai
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
       contents: [{ role: "user", parts: [{ text: question }] }],
@@ -285,7 +260,7 @@ ATURAN WAJIB MARA AI:
       },
     });
 
-    // 8. Response to front-end
+    // 7. Response to front-end
     res.json({ reply: response.text });
   } catch (err) {
     console.error("Error Detail dari Mara AI:", err);
