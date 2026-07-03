@@ -144,11 +144,6 @@ app.get("/api/article/:slug", async (req, res) => {
   }
 });
 
-// AI FAQ
-const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY,
-});
-
 // FAQS
 app.get("/api/faqs", async (req, res) => {
   try {
