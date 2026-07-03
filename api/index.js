@@ -250,14 +250,21 @@ ATURAN WAJIB MARA AI DALAM MENJAWAB:
       },
     });
 
-    // 6. Response ke front-end
-    res.json({ reply: response.text });
+    // Response
+    const aiReply = response && response.text ? response.text.trim() : null;
+
+    if (aiReply) {
+      res.json({ reply: aiReply });
+    } else {
+      res.json({
+        reply:
+          "Halo! Mara berhasil terhubung, namun tidak ada teks jawaban yang dihasilkan oleh AI. Coba tanyakan dengan kalimat lain ya.",
+      });
+    }
   } catch (err) {
     console.error("Error Detail dari Mara AI:", err);
-    res.status(500).json({
-      error:
-        "Mohon maaf, terjadi kendala teknis pada sistem Mara AI: " +
-        err.message,
+    res.json({
+      reply: "Terjadi kendala interaksi serverless: " + err.message,
     });
   }
 });
