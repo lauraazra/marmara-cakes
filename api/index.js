@@ -9,10 +9,12 @@ const Product = require("./models/product");
 const BrandValue = require("./models/brandvalue");
 const Article = require("./models/article");
 const CategoryArticle = require("./models/categoryarticle");
-const { GoogleGenAI } = require("@google/genai");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 const FAQ = require("./models/FAQ");
 
 const app = express();
+
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 connectDB();
 
@@ -181,7 +183,7 @@ app.post("/api/tanya-ai", async (req, res) => {
       FAQ.find().select("question answer").lean(),
     ]);
 
-    // 2. Olah Detail Produk
+    // 2. Olah Detail Produk Kue
     let infoProdukMarmara = "DAFTAR MENU & DETAIL PRODUK KUE:\n";
     products.forEach((prod, index) => {
       infoProdukMarmara += `${index + 1}. Nama Kue: ${prod.name || "Menu Marmara"}\n`;
@@ -237,28 +239,30 @@ ATURAN WAJIB MARA AI DALAM MENJAWAB:
 1. Sapa pelanggan dengan panggilan yang santun dan hangat seperti "Kakak", "Anda", atau "Happiness Seekers".
 2. JANGAN PERNAH menggunakan kata gaul, kasar, atau slang jalanan seperti "Bre", "Gua", "Lu", "Bro", atau "Cuy". Gunakan kata ganti "Mara" untuk menyebut dirimu sendiri.
 3. Jika pelanggan bertanya tentang harga kue, deskripsi rasa kue, atau varian ukuran, ambil data dari DAFTAR MENU & DETAIL PRODUK secara presisi. Jangan pernah memanipulasi atau mengarang harga nominal!
-4. Jika pelanggan bertanya tentang ketahanan kue, status halal, tata cara refund, pengiriman, pisau/lilin, atau pengajuan kemitraan, baca dan jawab secara Hiking eksklusif mengikuti data resmi PERTANYAAN UMUM (FAQ) & KEBIJAKAN TOKO.
+4. Jika pelanggan bertanya tentang ketahanan kue, status halal, tata cara refund, pengiriman, pisau/lilin, atau pengajuan kemitraan, baca dan jawab secara eksklusif mengikuti data resmi PERTANYAAN UMUM (FAQ) & KEBIJAKAN TOKO.
 5. Jika pertanyaan melenceng jauh di luar konteks toko kue Marmara Cakes, tolaklah dengan bahasa yang sangat halus, sopan, dan arahkan kembali mereka dengan menawarkan bantuan seputar produk kue Marmara.`;
 
-    // 5. Pemanggilan Menggunakan Struktur Object Sesuai SDK Terbaru @google/genai
-    const response = await ai.models.generateContent({
+    // 5. PANGGIL MODEL MENGGUNAKAN SDK @google/generative-ai
+    const model = genAI.getGenerativeModel({
       model: "gemini-2.5-flash",
+      systemInstruction: systemInstruction,
+    });
+
+    const response = await model.generateContent({
       contents: [{ role: "user", parts: [{ text: question }] }],
-      config: {
-        systemInstruction: systemInstruction,
+      generationConfig: {
         temperature: 0.2,
       },
     });
 
-    // Response
-    const aiReply = response && response.text ? response.text.trim() : null;
+    const aiReply = response.response.text();
 
     if (aiReply) {
       res.json({ reply: aiReply });
     } else {
       res.json({
         reply:
-          "Halo! Mara berhasil terhubung, namun tidak ada teks jawaban yang dihasilkan oleh AI. Coba tanyakan dengan kalimat lain ya.",
+          "Halo! Mara berhasil terhubung, namun tidak ada teks jawaban yang dihasilkan. Silakan coba tanyakan dengan kalimat lain ya.",
       });
     }
   } catch (err) {
