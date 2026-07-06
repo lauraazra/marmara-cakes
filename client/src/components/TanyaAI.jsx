@@ -80,12 +80,12 @@ export default function TanyaAI() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             disabled={loading}
-            className="w-full pl-4 pr-24 py-3.5 text-sm sm:text-base text-zinc-700 bg-white border border-border-site rounded-lg focus:outline-none focus:ring-2 focus:ring-marmara-teal min-h-[48px]"
+            className="w-full pl-4 pr-24 py-3.5 text-sm sm:text-base text-zinc-700 bg-white border border-border-site rounded-lg focus:outline-none focus:ring-2 focus:ring-marmara-teal min-h-12"
           />
           <button
             type="submit"
             disabled={loading || !query.trim()}
-            className="absolute right-2 bg-marmara-teal text-white font-bold py-2 px-5 rounded-md hover:bg-marmara-deepTeal transition-all duration-300 disabled:bg-zinc-300 disabled:cursor-not-allowed text-xs sm:text-sm min-h-[36px]"
+            className="absolute right-2 bg-marmara-teal text-white font-bold py-2 px-5 rounded-md hover:bg-marmara-deepTeal transition-all duration-300 disabled:bg-zinc-300 disabled:cursor-not-allowed text-xs sm:text-sm min-h-9"
           >
             {loading ? "..." : "Tanya"}
           </button>
