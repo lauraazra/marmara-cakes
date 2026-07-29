@@ -134,12 +134,14 @@ export default function AdminLayout() {
             </svg>
           </button>
 
+          {/* Status Badge */}
           <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-zinc-700 bg-zinc-100 px-3 py-1.5 rounded-full">
             <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></div>
             <span>Admin Mode</span>
           </div>
         </header>
 
+        {/* ISI HALAMAN */}
         <main className="flex-1 p-4 sm:p-6 lg:p-8 overflow-y-auto">
           <Outlet />
         </main>

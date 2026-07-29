@@ -1,5 +1,4 @@
 export default function AdminDashboard() {
-  // Data dummy untuk visualisasi dashboard
   const stats = [
     {
       label: "Total Produk",
