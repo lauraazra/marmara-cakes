@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { useAuth } from "../context/AuthContext"; // Pastikan path context-nya bener ya, Bre
+import { useAuth } from "../context/AuthContext";
 
 export default function AdminLogin() {
   const [email, setEmail] = useState("");
@@ -8,13 +8,11 @@ export default function AdminLogin() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  // AMBIL FUNGSI LOGIN DARI CONTEXT (JANGAN BIKIN BARU!)
   const { login } = useAuth();
 
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Redirect otomatis balik ke halaman asal sebelum di-kick satpam, default ke /admin
   const from = location.state?.from?.pathname || "/admin";
 
   const handleSubmit = async (e) => {
@@ -22,13 +20,11 @@ export default function AdminLogin() {
     setError("");
     setIsLoading(true);
 
-    // Simulasi loading tipis-tipis biar estetik pas diklik
     setTimeout(() => {
-      const res = login(email, password); // Ini memicu login global
+      const res = login(email, password);
       setIsLoading(false);
 
       if (res.success) {
-        // Ganti halaman dengan replace: true agar user ga bisa pencet tombol 'Back' ke login lagi
         navigate(from, { replace: true });
       } else {
         setError(res.message);
@@ -39,7 +35,6 @@ export default function AdminLogin() {
   return (
     <div className="min-h-screen bg-zinc-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8 font-sans antialiased text-zinc-800">
       <div className="sm:mx-auto w-full max-w-md">
-        {/* Logo / Brand Intro */}
         <div className="text-center">
           <span className="text-xs font-bold uppercase tracking-widest text-custom-purple bg-custom-purple/10 px-3 py-1 rounded-md inline-block mb-3">
             Internal Backoffice
@@ -139,7 +134,6 @@ export default function AdminLogin() {
           </form>
         </div>
 
-        {/* Footer Kecil Keamanan */}
         <p className="mt-6 text-center text-xs text-zinc-400">
           Halaman ini dilindungi enkripsi internal.
           <br />

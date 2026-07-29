@@ -18,7 +18,6 @@ export default function MainLayout() {
   const hiddenWaRoutes = [["/collaboration", "/career", "/partnership"]];
   const shouldHideWhatsApp = hiddenWaRoutes.includes(location.pathname);
 
-  // ==================== STATE & LOGIKA POP-UP PROMO ====================
   const [showPromo, setShowPromo] = useState(false);
 
   useEffect(() => {
@@ -32,7 +31,6 @@ export default function MainLayout() {
     setShowPromo(false);
     sessionStorage.setItem("hasSeenPromoPopUp", "true");
   };
-  // ====================================================================
 
   return (
     <div className="min-h-screen flex flex-col font-sans antialiased relative bg-bg-site text-text-site">
@@ -44,7 +42,6 @@ export default function MainLayout() {
 
       <StickyCartBar />
 
-      {/* ================= STICKY WHATSAPP WITH CUSTOM ANIMATION ================= */}
       {!shouldHideWhatsApp && (
         <a
           href={whatsappUrl}
@@ -56,12 +53,10 @@ export default function MainLayout() {
           hover:bg-[#20ba56] hover:scale-110 active:scale-95 group transition-all duration-300
           "
         >
-          {/* Tooltip text */}
           <span className="absolute right-14 top-1/2 -translate-y-1/2 bg-bg-site border border-text-site/10 text-text-site text-xs font-semibold px-3 py-1.5 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 hidden sm:block shadow-md">
             Tanya Marmara via WA 👋
           </span>
 
-          {/* SVG Icon WhatsApp */}
           <svg
             className="w-6 h-6 sm:w-7 sm:h-7 fill-current"
             viewBox="0 0 24 24"
@@ -73,7 +68,6 @@ export default function MainLayout() {
 
       <Footer />
 
-      {/* ================= COMPONENT POP-UP PROMO GLOBAL ================= */}
       <AnimatePresence>
         {showPromo && (
           <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">

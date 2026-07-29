@@ -1,12 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useFetchData } from "../hooks/useFetchData";
-
-// === Layout Components ===
 import Container from "../components/layouts/Container";
 import Section from "../components/layouts/Section";
-
-// === Components ===
 import ArticleCard from "../components/features/article/ArticleCard";
 import ScrollableTabs from "../components/ScrollableTabs";
 import TextSection from "../components/TextSection";
@@ -79,7 +75,6 @@ export default function ArticleHub() {
 
   return (
     <>
-      {/* SEKSI JUDUL */}
       <Section>
         <Container>
           <div className="flex flex-col gap-12">
@@ -87,9 +82,7 @@ export default function ArticleHub() {
               title="Marmara Articles & Treats"
               subtitle="Ikuti keseruan momen perayaan, info produk baru, event menarik, serta promo eksklusif terbaru dari Marmara Cake di sini."
             />
-            {/* --- HERO SEARCH & TABS --- */}
             <div className="text-center flex flex-col gap-6">
-              {/* 1. Component Search */}
               <SearchBox value={searchQuery} onChange={handleSearchChange} />
 
               <ScrollableTabs
@@ -102,18 +95,14 @@ export default function ArticleHub() {
               />
             </div>
 
-            {/* --- FEATURED & POPULAR SECTION --- */}
             {featuredArticle && activeCategory === "all" && !searchQuery && (
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 items-stretch">
-                {/* 2. Component Featured */}
                 <FeaturedSection article={featuredArticle} />
 
-                {/* 3. Component Popular */}
                 <PopularSection articles={articles} />
               </div>
             )}
 
-            {/* --- ARTICLE GRID --- */}
             <div className="flex flex-col gap-1">
               {displayedArticles.length > 0 ? (
                 <motion.div
@@ -132,7 +121,6 @@ export default function ArticleHub() {
                 </div>
               )}
 
-              {/* --- 4. Component Load More --- */}
               <LoadMoreButton
                 onClick={handleLoadMore}
                 isVisible={filteredArticles.length > visibleCount}

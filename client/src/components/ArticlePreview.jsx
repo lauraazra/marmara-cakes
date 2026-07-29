@@ -87,13 +87,11 @@ export default function ArticlePreview({ loading, articles, error }) {
                   />
                 </div>
 
-                {/* 2. Metadata */}
                 <div className="flex items-center gap-3 text-xs font-semibold text-text-secondary uppercase tracking-wider mb-2">
                   <span>{categoryName}</span>
                   <span className="text-text-site/70">•</span>
                   <span className="text-text-site/70 flex items-center gap-1 font-normal normal-case">
                     <Clock size={12} /> {article.readTime} min read{" "}
-                    {/* Di DB readTime cuma angka, tambahin tulisan 'min read' */}
                   </span>
                   <span className="text-text-site/70">•</span>
                   <span className="text-text-site/70 font-normal normal-case">
@@ -101,17 +99,14 @@ export default function ArticlePreview({ loading, articles, error }) {
                   </span>
                 </div>
 
-                {/* 3. Judul */}
                 <h3 className="text-lg font-bold text-marmara-deepTeal group-hover:text-text-secondary transition-colors duration-200 line-clamp-2 leading-snug mb-2">
                   {article.title}
                 </h3>
 
-                {/* 4. Deskripsi Pendek */}
                 <p className="text-text-site/70 text-sm line-clamp-2 leading-relaxed mb-4">
                   {article.excerpt}
                 </p>
 
-                {/* 5. Link Read More */}
                 <div className="mt-auto pt-1">
                   <span className="text-marmara-deepTeal font-bold text-xs flex items-center gap-1 group-hover:gap-2 transition-all">
                     Read Story{" "}

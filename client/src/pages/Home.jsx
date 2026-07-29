@@ -1,12 +1,7 @@
-// === Layout Component ===
 import Section from "../components/layouts/Section";
 import Container from "../components/layouts/Container";
-
-// === Third Import ===
 import { motion } from "framer-motion";
 import { useFetchData } from "../hooks/useFetchData";
-
-// === Component ===
 import BannerSlider from "../components/BannerSlider";
 import Highlight from "../components/features/Home/Highlight";
 import TextSection from "../components/TextSection";
@@ -29,7 +24,6 @@ export default function Home() {
 
   return (
     <>
-      {/* 1. Top Section */}
       <Section isHero>
         <div className="banner mb-6">
           <BannerSlider />
@@ -54,7 +48,6 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* 2. Categories Section */}
       <Section className="bg-bg-section-2/10">
         <Container className="flex flex-col gap-12">
           <TextSection
@@ -73,7 +66,6 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* 3. Article Section */}
       <Section>
         <Container>
           <div className="flex flex-col gap-12">
@@ -93,7 +85,6 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* 5. Outlets Map Section */}
       <Section className="bg-bg-section-2/10">
         <Container>
           <div className="flex flex-col gap-12">
@@ -109,7 +100,6 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* 6. FAQ Section */}
       <Section>
         <Container>
           <div className="flex flex-col gap-12">

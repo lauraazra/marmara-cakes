@@ -18,12 +18,8 @@ import PartnershipPage from "./pages/PartnershipPage";
 import CareerPage from "./pages/CareerPage";
 import LocationPage from "./pages/LocationPage";
 import ScrollToTop from "./components/ScrollToTop";
-
-// === SISTEM PROTEKSI & CONTEXT ===
 import { AuthProvider } from "./admin/context/AuthContext";
 import ProtectedRoute from "./admin/components/ProtectedRoute";
-
-// === HALAMAN ADMIN PANEL ===
 import AdminLogin from "./admin/pages/Login";
 import AdminDashboard from "./admin/pages/Dashboard";
 
@@ -32,12 +28,10 @@ function App() {
     <AuthProvider>
       <CartProvider>
         {" "}
-        {/* 🌟 BUNGKUS DI SINI */}
         <BrowserRouter>
           <ScrollToTop />
 
           <Routes>
-            {/* ================= 1. SEMUA HALAMAN UMUM ================= */}
             <Route path="/" element={<MainLayout />}>
               <Route index element={<Home />} />
               <Route path="product/:slug" element={<ProductPage />} />
@@ -55,10 +49,8 @@ function App() {
               <Route path="location" element={<LocationPage />} />
             </Route>
 
-            {/* ================= 2. GERBANG LOGIN ADMIN ================= */}
             <Route path="/admin/login" element={<AdminLogin />} />
 
-            {/* ================= 3. PANEL ADMIN ================= */}
             <Route
               path="/admin"
               element={

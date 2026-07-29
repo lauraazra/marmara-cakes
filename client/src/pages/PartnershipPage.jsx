@@ -3,7 +3,6 @@ import { useState, useRef } from "react";
 export default function PartnershipPage() {
   const formSectionRef = useRef(null);
 
-  // State Form Input
   const [formData, setFormData] = useState({
     nama: "",
     perusahaan: "",
@@ -13,12 +12,10 @@ export default function PartnershipPage() {
     pesan: "",
   });
 
-  // State Validasi & Status Form
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  // Template Pesan WhatsApp B2B
   const waNumber = "6281222152255";
   const waMessage = encodeURIComponent(
     "Halo Tim B2B Marmara Cake, saya tertarik untuk mendiskusikan peluang kerja sama kemitraan untuk bisnis saya. Boleh dibantu untuk proses awalnya? Terima kasih.",
@@ -29,7 +26,6 @@ export default function PartnershipPage() {
     formSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // Handle Input Change
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -38,11 +34,9 @@ export default function PartnershipPage() {
     }
   };
 
-  // Handle Submit Form
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // 1. Validasi Input Sederhana
     let validationErrors = {};
     if (!formData.email.trim()) {
       validationErrors.email = "Email wajib diisi";
@@ -55,7 +49,6 @@ export default function PartnershipPage() {
 
     setLoading(true);
 
-    // 2. Susun template teks rapi dari isi Form data
     const teksWhatsApp = `*KEMITRAAN BARU - MARMARA B2B*
 
 * Nama Lengkap: ${formData.nama}
@@ -88,7 +81,6 @@ Mohon dibantu untuk proses awal kemitraan ini. Terima kasih!`;
 
   return (
     <div className="min-h-screen bg-bg-site font-sans text-text-site relative antialiased transition-colors duration-300">
-      {/* 3.1 HERO SECTION */}
       <section className="relative bg-linear-to-br from-zinc-950 via-zinc-900 to-zinc-950 text-white py-24 px-4 sm:px-6 lg:px-8 text-center border-b border-zinc-800">
         <div className="max-w-4xl mx-auto">
           <span className="text-xs font-bold uppercase tracking-widest text-marmara-gold bg-marmara-gold/10 px-3 py-1 rounded-full border border-marmara-gold/20">
@@ -106,7 +98,6 @@ Mohon dibantu untuk proses awal kemitraan ini. Terima kasih!`;
             white-label Anda.
           </p>
 
-          {/* Tombol CTA Hero */}
           <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
             <button
               onClick={scrollToForm}
@@ -126,7 +117,6 @@ Mohon dibantu untuk proses awal kemitraan ini. Terima kasih!`;
         </div>
       </section>
 
-      {/* 3.2 KEUNGGULAN KERJA SAMA */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-text-site">
@@ -218,7 +208,6 @@ Mohon dibantu untuk proses awal kemitraan ini. Terima kasih!`;
         </div>
       </section>
 
-      {/* 3.3 SKEMA & MODEL KEMITRAAN */}
       <section className="py-20 bg-card-site/40 border-y border-border-site/20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -294,13 +283,11 @@ Mohon dibantu untuk proses awal kemitraan ini. Terima kasih!`;
         </div>
       </section>
 
-      {/* 4. ALUR KONVERSI & KONTAK */}
       <section
         ref={formSectionRef}
         className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto scroll-mt-6"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* 4.1 FORM PENGAJUAN KEMITRAAN */}
           <div className="lg:col-span-7 bg-card-site border border-border-site/20 p-6 sm:p-8 rounded-2xl shadow-sm">
             <h3 className="text-xl font-bold text-text-site mb-2">
               Formulir Pengajuan Kemitraan
@@ -446,7 +433,6 @@ Mohon dibantu untuk proses awal kemitraan ini. Terima kasih!`;
             )}
           </div>
 
-          {/* 4.2 KORESPONDENSI RESMI */}
           <div className="lg:col-span-5 space-y-6 lg:pl-4">
             <div>
               <h3 className="text-xl font-bold text-text-site mb-2">
@@ -522,7 +508,6 @@ Mohon dibantu untuk proses awal kemitraan ini. Terima kasih!`;
         </div>
       </section>
 
-      {/* 4.3 FLOATING WIDGET WHATSAPP */}
       <a
         href={waLink}
         target="_blank"

@@ -43,7 +43,6 @@ export default function Navbar() {
   return (
     <nav className="bg-marmara-deep-teal dark:bg-marmara-teal text-marmara-light-grey shadow-md sticky top-0 z-50 transition-colors duration-300 border-b border-border-site/50 shadow-shadow-primary/30">
       <div className="flex items-center justify-between px-5 md:px-10 lg:px-20 py-4 mx-auto w-full">
-        {/* 1. LOGO AREA */}
         <div className="flex-1 flex justify-start">
           <NavLink className="logo" to="/">
             <img
@@ -54,7 +53,6 @@ export default function Navbar() {
           </NavLink>
         </div>
 
-        {/* Backdrop overlay untuk mobile menu */}
         {menuOpen && (
           <div
             className="fixed inset-0 bg-black/60 backdrop-blur-xs z-40 lg:hidden"
@@ -62,7 +60,6 @@ export default function Navbar() {
           />
         )}
 
-        {/* 2. LINKS AREA (NAVBAR MENU) */}
         <div
           className={`fixed top-0 right-0 h-full w-2/3 bg-marmara-deep-teal dark:bg-marmara-teal z-50 p-10 transition-transform duration-500 ease-in-out shadow-2xl md:w-full ${
             menuOpen
@@ -70,7 +67,6 @@ export default function Navbar() {
               : "translate-x-full md:translate-x-0 md:-translate-y-full"
           } lg:flex lg:static lg:flex-1 lg:justify-center lg:w-auto lg:h-auto lg:bg-transparent lg:p-0 lg:translate-x-0 lg:shadow-none lg:translate-y-0`}
         >
-          {/* Tombol Close Mobile Menu */}
           <button
             className="lg:hidden text-text-site absolute top-7 right-10 p-2 transition-transform duration-500 hover:rotate-90 cursor-pointer"
             onClick={() => setMenuOpen(false)}
@@ -127,9 +123,7 @@ export default function Navbar() {
           </ul>
         </div>
 
-        {/* 3. RIGHT AREA (DARK MODE TOGGLE & HAMBURGER TOOGLE) */}
         <div className="flex-1 flex justify-end items-center gap-4">
-          {/* TOMBOL TOGGLE DARK MODE / LIGHT MODE */}
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
             type="button"
@@ -153,7 +147,6 @@ export default function Navbar() {
             </div>
           </button>
 
-          {/* Tombol Hamburger Menu */}
           <div
             className={`lg:hidden flex items-center transition-transform duration-300 hover:scale-110 ${menuOpen ? "hidden" : "block"}`}
           >

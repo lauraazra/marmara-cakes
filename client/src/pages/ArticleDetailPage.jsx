@@ -1,11 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useFetchData } from "../hooks/useFetchData";
-
-// === Layout Component ===
 import Section from "../components/layouts/Section";
 import Container from "../components/layouts/Container";
-
-// === COMPONENTS ===
 import ArticleHeader from "../components/features/article/ArticleHeader";
 import ArticleDetailSkeleton from "../components/features/article/ArticleDetailSkeleton";
 import ArticleCard from "../components/features/article/ArticleCard";
@@ -14,22 +10,18 @@ import Grid3 from "../components/Grid3";
 export default function ArticleDetail() {
   const { slug } = useParams();
 
-  // 1. Fetch Detail Artikel
   const {
     data: article,
     loading: articleLoading,
     error: articleError,
   } = useFetchData(`article/${slug}`);
 
-  // 2. Fetch Semua Artikel
   const { data: allArticles, loading: articlesLoading } =
     useFetchData("articles");
 
-  // 3. Fetch Kategori Produk
   const { data: allCategories, loading: categoriesLoading } =
     useFetchData("categoryproduct");
 
-  // Formatter tanggal bawaan database
   const formatTanggal = (dateString) => {
     return new Date(dateString).toLocaleDateString("id-ID", {
       day: "numeric",
@@ -60,8 +52,6 @@ export default function ArticleDetail() {
       </div>
     );
   }
-
-  // LOGIC REKOMENDASI KATEGORI DENGAN GRID3
 
   // data kategori produk
   const mappedCategories = Array.isArray(allCategories)
@@ -94,7 +84,6 @@ export default function ArticleDetail() {
         <Container>
           <div className="flex flex-col gap-12">
             <div className="min-h-screen transition-colors duration-300">
-              {/* A. KONTEN UTAMA ARTIKEL */}
               <article>
                 <ArticleHeader
                   categoryName={categoryName}
@@ -104,7 +93,6 @@ export default function ArticleDetail() {
                   formatTanggal={formatTanggal}
                 />
 
-                {/* Main Image Banner */}
                 <div className="w-3/4 h-full rounded-2xl overflow-hidden shadow-xs border border-text-site/5 mb-8 mx-auto">
                   <img
                     src={imageUrl}
@@ -113,13 +101,11 @@ export default function ArticleDetail() {
                   />
                 </div>
 
-                {/* Content Body HTML */}
                 <div
                   className="prose dark:prose-invert max-w-none mx-auto text-text-site/80"
                   dangerouslySetInnerHTML={{ __html: article.content }}
                 />
 
-                {/* Tags Section */}
                 {article.tags && article.tags.length > 0 && (
                   <div className="mt-10 pt-6 border-t border-text-site/10">
                     <p className="text-xs font-bold uppercase tracking-wider text-text-site/40 mb-3">

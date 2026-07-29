@@ -1,12 +1,7 @@
-// === Layout Component ===
 import Section from "../components/layouts/Section";
 import Container from "../components/layouts/Container";
-
-// === Third Import
 import { NavLink } from "react-router-dom";
 import { useFetchData } from "../hooks/useFetchData";
-
-// === Components ===
 import TextSection from "../components/TextSection";
 import Grid3 from "../components/Grid3";
 

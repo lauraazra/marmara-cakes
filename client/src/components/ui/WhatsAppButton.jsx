@@ -37,15 +37,14 @@ export default function WhatsAppButton() {
         }}
         whileTap={{ scale: 0.98, y: 0 }}
         className="
-          group /* 🌟 WAJIB ADA INI BIAR KODE DI SVG BISA JALAN */
-          inline-flex items-center justify-center gap-3 
-          border-2 border-[#25D366] py-3 px-7 lg:py-4 lg:px-9 
+          group inline-flex items-center justify-center gap-3 
+          border-2 border-[#396f98] py-3 px-7 lg:py-4 lg:px-9 
           rounded-full font-bold text-sm sm:text-base cursor-pointer 
           transition-all duration-300
           
           /* LIGHT MODE */
-          bg-[#25D366]/5 text-marmara-teal
-          hover:bg-[#25D366] hover:text-white
+          bg-[#25D366]/5 text-[#459ede]
+          hover:bg-[#244863] hover:text-white
           
           /* DARK MODE */
           dark:bg-[#25D366]/10 dark:text-[#25D366]

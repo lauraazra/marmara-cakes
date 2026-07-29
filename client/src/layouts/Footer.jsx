@@ -11,10 +11,8 @@ export default function Footer() {
       {/* AREA UTAMA FOOTER */}
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
-          {/* ================= BLOK KIRI: BRAND IDENTITY & TAGLINE ================= */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 ">
-              {/* Gambar Logo Marmara Cake */}
               <img
                 src="/img/logoMarmara.png"
                 alt="Marmara Cakes Logo"
@@ -46,7 +44,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ================= BLOK TENGAH: QUICK LINKS ================= */}
           <div className="space-y-4">
             <h3 className="text-xs font-black uppercase tracking-widest text-link-hover">
               Quick Links
@@ -103,7 +100,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* ================= BLOK TENGAH: JAM OPERASIONAL INFO ================= */}
           <div className="space-y-4">
             <h3 className="text-xs font-black uppercase tracking-widest text-link-hover">
               Jam Operasional
@@ -119,7 +115,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ================= BLOK KANAN: MEDIA SOSIAL & FEEDBACK ================= */}
           <div className="space-y-4">
             <h3 className="text-xs font-black uppercase tracking-widest text-link-hover">
               Connect With Us
@@ -167,7 +162,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* ================= SUB-FOOTER (BARIS PENUH PALING BAWAH) ================= */}
         <div className="mt-12 pt-8 border-t border-border-site/50 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-semibold text-text-site/50">
           <p>
             &copy; {new Date().getFullYear()} Marmara Cakes Premium. All rights

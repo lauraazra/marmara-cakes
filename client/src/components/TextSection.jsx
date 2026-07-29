@@ -40,7 +40,7 @@ export default function TextSection({ title, subtitle }) {
         </motion.h2>
       )}
 
-      {/* Deskripsi / Sub-judul */}
+      {/* Deskripsi */}
       {subtitle && (
         <motion.p
           variants={childVariants}

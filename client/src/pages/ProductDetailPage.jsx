@@ -117,7 +117,6 @@ export default function ProductDetailPage() {
             </span>
             <div className="px-4 max-w-5xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-card-site/40 p-8 rounded-2xl">
-                {/* Gambar */}
                 <div className="bg-card-site rounded-xl aspect-square overflow-hidden">
                   <img
                     src={product.image}

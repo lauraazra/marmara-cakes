@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 export default function Tagline() {
-  // 1. Animasi Kontainer (Induk)
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -12,7 +11,6 @@ export default function Tagline() {
     },
   };
 
-  // 2. Animasi Baris Teks (Anak)
   const textVariants = {
     hidden: { opacity: 0, y: 40 },
     visible: {

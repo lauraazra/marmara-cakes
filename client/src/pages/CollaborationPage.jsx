@@ -1,16 +1,12 @@
 import { Briefcase, Handshake, ArrowRight, Users, Rocket } from "lucide-react";
 import { Link } from "react-router-dom";
-
-// === Layout Component ===
 import Section from "../components/layouts/Section";
 import Container from "../components/layouts/Container";
 
 const CollaborationPage = () => {
   return (
     <>
-      {/* 1. Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        {/* Background dengan perbaikan posisi */}
         <div
           className="
               absolute inset-0 z-0 
@@ -26,7 +22,6 @@ const CollaborationPage = () => {
             "
         ></div>
 
-        {/* Content (Text) - Dibuat lebih kontras tanpa box putih yang ganggu */}
         <div className="relative z-10 text-center px-6">
           <h1 className="font-bold text-4xl md:text-6xl text-marmara-white mb-4 drop-shadow-lg">
             Grow With Marmara
@@ -37,7 +32,6 @@ const CollaborationPage = () => {
         </div>
       </section>
 
-      {/* 2. Section Kolaborasi */}
       <Section>
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -128,7 +122,6 @@ const CollaborationPage = () => {
         </Container>
       </Section>
 
-      {/* 3. Stats Section */}
       <Section>
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">

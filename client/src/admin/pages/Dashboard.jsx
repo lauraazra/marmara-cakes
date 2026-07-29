@@ -60,7 +60,6 @@ export default function AdminDashboard() {
 
   return (
     <div className="space-y-8 animate-in fade-in duration-500">
-      {/* 1. Header Greeting */}
       <div>
         <h2 className="text-2xl font-black text-zinc-950 tracking-tight">
           Selamat Datang, Admin Marmara! 👋
@@ -70,7 +69,6 @@ export default function AdminDashboard() {
         </p>
       </div>
 
-      {/* 2. Statistik Ringkas (Cards) */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {stats.map((stat, idx) => (
           <div
@@ -92,9 +90,7 @@ export default function AdminDashboard() {
         ))}
       </div>
 
-      {/* 3. Grid Utama: Grafik (Placeholder) & Status Cabang */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Visualisasi Tren Penjualan (Placeholder Chart) */}
         <div className="lg:col-span-2 bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
           <div className="flex items-center justify-between mb-8">
             <h3 className="font-black text-zinc-900">
@@ -105,7 +101,6 @@ export default function AdminDashboard() {
               <option>30 Hari Terakhir</option>
             </select>
           </div>
-          {/* Box Placeholder Grafik */}
           <div className="h-64 bg-zinc-50 rounded-xl border border-dashed border-zinc-200 flex flex-col items-center justify-center">
             <svg
               className="w-12 h-12 text-zinc-200 mb-2"
@@ -126,7 +121,6 @@ export default function AdminDashboard() {
           </div>
         </div>
 
-        {/* Status Performa Cabang (PRD Terintegrasi) */}
         <div className="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
           <h3 className="font-black text-zinc-900 mb-6">Status 6 Cabang</h3>
           <div className="space-y-4">
@@ -154,7 +148,6 @@ export default function AdminDashboard() {
         </div>
       </div>
 
-      {/* 4. Pesanan Terbaru (Tabel) */}
       <div className="bg-white rounded-2xl border border-zinc-200 shadow-sm overflow-hidden">
         <div className="p-6 border-b border-zinc-100 flex items-center justify-between">
           <h3 className="font-black text-zinc-900">

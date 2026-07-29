@@ -53,7 +53,6 @@ export default function StickyCartBar() {
 
   return (
     <>
-      {/* 📥 FLOATING BAR BAWAH */}
       <div className="fixed bottom-0 left-0 right-0 bg-bg-site/95 backdrop-blur-md border-t border-border-site/20 shadow-xl px-4 py-4 pb-safe z-40 animate-fade-in">
         <div className="max-w-5xl mx-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
@@ -95,7 +94,6 @@ export default function StickyCartBar() {
         </div>
       </div>
 
-      {/* MODAL DIALOG PRE-CHECKOUT */}
       {isCartModalOpen && (
         <div className="fixed inset-0 bg-marmara-neutral/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className="bg-bg-site border border-border-site/30 w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden max-h-[80vh] flex flex-col animate-scale-up">
@@ -142,7 +140,7 @@ export default function StickyCartBar() {
                       </p>
                     </div>
 
-                    {/* Pengubah Kuantitas */}
+                    {/* Kuantitas */}
                     <div className="flex items-center gap-2.5">
                       <div className="flex items-center border border-border-site/30 rounded-lg bg-card-site">
                         <button
@@ -210,7 +208,6 @@ export default function StickyCartBar() {
         </div>
       )}
 
-      {/* MODAL KUSTOM KONFIRMASI RESET KERANJANG */}
       {isConfirmOpen && (
         <div className="fixed inset-0 bg-marmara-neutral/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in">
           <div className="bg-bg-site border border-border-site/40 w-full max-w-sm rounded-2xl shadow-2xl p-6 text-center animate-scale-up">
@@ -225,7 +222,6 @@ export default function StickyCartBar() {
               kamu masukkan ke dalam keranjang secara permanen.
             </p>
 
-            {/* Navigasi Tombol Pilihan */}
             <div className="grid grid-cols-2 gap-3">
               <button
                 type="button"

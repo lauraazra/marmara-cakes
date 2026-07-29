@@ -2,12 +2,8 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useFetchData } from "../hooks/useFetchData";
 import { NavLink } from "react-router-dom";
-
-// === Layout Components ===
 import Container from "../components/layouts/Container";
 import Section from "../components/layouts/Section";
-
-// === Components ===
 import TextSection from "../components/TextSection";
 import Grid3 from "../components/Grid3";
 import CatalogDesc from "../components/CatalogDecs";
@@ -26,7 +22,6 @@ export default function ProductPage() {
   const subCategories = data.subCategories || [];
   const category = data.category || [];
 
-  // 4. Logic Filter
   const filteredItems =
     selectedSub === "all"
       ? products
@@ -86,13 +81,12 @@ export default function ProductPage() {
             )}
             {subCategories.length > 0 && (
               <ScrollableTabs
-                // Gabungkan button "All" manual ke baris depan array object
                 items={[{ _id: "all", name: "All" }, ...subCategories]}
                 activeId={selectedSub}
                 onSelect={setSelectedSub}
                 idKey="_id"
                 labelKey="name"
-                themeColor="" // Pakai deepTeal sesuai style bawaan lu
+                themeColor=""
               />
             )}
             <Grid3

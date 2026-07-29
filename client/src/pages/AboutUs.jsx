@@ -1,12 +1,7 @@
-// === Layout Components ===
 import Section from "../components/layouts/Section";
 import Container from "../components/layouts/Container";
-
-// === Third Import ===
 import { motion } from "framer-motion";
 import { useFetchData } from "../hooks/useFetchData";
-
-// === Components ===
 import BrandValues from "../components/BrandValues";
 import Tagline from "../components/features/Home/Tagline";
 import TextSection from "../components/TextSection";
@@ -24,7 +19,7 @@ export default function AboutUs() {
 
   return (
     <>
-      {/* 1. Hero Section */}
+      {/* Hero Section */}
       <Section
         isHero
         className="relative w-full h-screen flex items-center justify-center bg-marmara-deepTeal/5 overflow-hidden"
@@ -50,10 +45,9 @@ export default function AboutUs() {
         <div className="absolute bottom-0 left-0 w-full h-32 bg-linear-to-t from-black/5 to-transparent"></div>
       </Section>
 
-      {/* 2. Parallax Divider */}
       <div className="w-full h-48 md:h-80 lg:h-56 bg-[url(/img/turki.png)] bg-cover bg-center bg-no-repeat bg-scroll lg:bg-fixed lg:bg-position-[0%_0%]" />
 
-      {/* 3. Marmara Way Section */}
+      {/* Marmara Way Section */}
       <Section className="flex flex-col items-center">
         <Container>
           <div className="flex flex-col gap-12">
@@ -107,7 +101,7 @@ export default function AboutUs() {
         </Container>
       </Section>
 
-      {/* 4. Brand Story Section */}
+      {/* Brand Story Section */}
       <Section className="overflow-hidden flex flex-col lg:flex-row items-center bg-bg-section-2/10 py-16 lg:py-24 gap-12 lg:gap-0">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -181,7 +175,7 @@ export default function AboutUs() {
         </motion.div>
       </Section>
 
-      {/* 5. Brand Values */}
+      {/* Brand Values */}
       <Section>
         <Container>
           <div className="flex flex-col gap-12">

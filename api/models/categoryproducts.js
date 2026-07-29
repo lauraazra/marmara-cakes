@@ -7,7 +7,6 @@ const categoryProductSchema = new mongoose.Schema({
   slug: { type: String, unique: true },
 });
 
-// Automatically generates a URL-friendly slug
 categoryProductSchema.pre("save", function (next) {
   if (this.isModified("name")) {
     this.slug = this.name

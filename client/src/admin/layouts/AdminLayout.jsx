@@ -7,7 +7,6 @@ export default function AdminLayout() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // State sakti untuk mengontrol buka-tutup sidebar di mobile/tablet
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const handleLogout = () => {
@@ -15,12 +14,10 @@ export default function AdminLayout() {
     navigate("/admin/login", { replace: true });
   };
 
-  // Fungsi pembantu untuk mendeteksi apakah menu tersebut sedang aktif
   const isActive = (path) => location.pathname === path;
 
   return (
     <div className="min-h-screen bg-zinc-100 flex font-sans antialiased text-zinc-800 relative">
-      {/* 1. OVERLAY BACKGROUND (Hanya muncul di Mobile/Tablet saat Sidebar kebuka) */}
       {isSidebarOpen && (
         <div
           className="fixed inset-0 bg-zinc-950/40 z-40 lg:hidden transition-opacity duration-300 backdrop-blur-sm"
@@ -28,7 +25,6 @@ export default function AdminLayout() {
         />
       )}
 
-      {/* 2. SIDEBAR KIRI (Responsif Slide-in di Mobile, Menetap di Desktop) */}
       <aside
         className={`
           fixed top-0 bottom-0 left-0 w-64 bg-zinc-900 text-zinc-200 flex flex-col justify-between p-6 shadow-xl z-50
@@ -38,7 +34,6 @@ export default function AdminLayout() {
         `}
       >
         <div>
-          {/* Brand/Logo Admin & Tombol Close Khusus Mobile */}
           <div className="mb-8 px-2 flex items-center justify-between">
             <div>
               <h1 className="text-xl font-black tracking-tight text-white">
@@ -49,7 +44,7 @@ export default function AdminLayout() {
               </p>
             </div>
 
-            {/* Tombol X Close (Hanya muncul di Layar Kecil) */}
+            {/* Tombol X */}
             <button
               onClick={() => setIsSidebarOpen(false)}
               className="lg:hidden p-1.5 rounded-lg text-zinc-400 hover:bg-zinc-800 hover:text-white transition-colors"
@@ -70,7 +65,7 @@ export default function AdminLayout() {
             </button>
           </div>
 
-          {/* Menu Navigasi (Otomatis menutup sidebar di mobile setelah diklik) */}
+          {/* Menu Navigasi */}
           <nav className="space-y-1">
             <Link
               to="/admin"
@@ -108,7 +103,7 @@ export default function AdminLayout() {
           </nav>
         </div>
 
-        {/* Tombol Logout di Paling Bawah Sidebar */}
+        {/* Tombol Logout */}
         <button
           onClick={handleLogout}
           className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-rose-600/10 text-rose-400 border border-rose-500/20 rounded-xl text-sm font-bold hover:bg-rose-600 hover:text-white transition-all duration-150 active:scale-[0.98]"
@@ -117,11 +112,8 @@ export default function AdminLayout() {
         </button>
       </aside>
 
-      {/* 3. AREA KONTEN UTAMA (Kanan - Mengisi ruang sisa layar) */}
       <div className="flex-1 flex flex-col min-w-0 overflow-x-hidden w-full">
-        {/* Top Header Dinamis & Burger Button */}
         <header className="h-16 bg-white border-b border-zinc-200 px-4 sm:px-8 flex items-center justify-between lg:justify-end shadow-sm shrink-0">
-          {/* Burger Button (Hanya tampil di Mobile & Tablet < lg breakpoint) */}
           <button
             onClick={() => setIsSidebarOpen(true)}
             className="lg:hidden p-2 rounded-xl text-zinc-600 hover:bg-zinc-100 hover:text-zinc-950 transition-all duration-200 border border-zinc-200"
@@ -142,14 +134,12 @@ export default function AdminLayout() {
             </svg>
           </button>
 
-          {/* Status Badge Indikator Admin */}
           <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-zinc-700 bg-zinc-100 px-3 py-1.5 rounded-full">
             <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></div>
             <span>Admin Mode</span>
           </div>
         </header>
 
-        {/* ISI HALAMAN DINAMIS (Menggunakan padding responsif px-4 ke px-8) */}
         <main className="flex-1 p-4 sm:p-6 lg:p-8 overflow-y-auto">
           <Outlet />
         </main>

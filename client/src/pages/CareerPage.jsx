@@ -33,7 +33,6 @@ export default function CareerPage() {
 
   return (
     <div className="bg-bg-site min-h-screen font-sans text-text-site antialiased transition-colors duration-300">
-      {/* 2.1 Hero Section & Brand Culture */}
       <section className="relative overflow-hidden bg-bg-site py-16 sm:py-24 border-b border-border-site/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center rounded-md bg-text-secondary/10 px-3 py-1 text-xs font-semibold text-text-secondary ring-1 ring-inset ring-text-secondary/20 mb-4">
@@ -47,7 +46,6 @@ export default function CareerPage() {
             untuk menyajikan produk bakery terbaik berstandar internasional.
           </p>
 
-          {/* Visual Area */}
           <div className="mt-12 max-w-4xl mx-auto aspect-[16/9] rounded-2xl bg-card-site border border-border-site/30 shadow-lg flex items-center justify-center overflow-hidden group">
             <img
               src="/img/career.png"
@@ -58,7 +56,6 @@ export default function CareerPage() {
         </div>
       </section>
 
-      {/* 2.2 Keuntungan Bergabung (Perks & Benefits) */}
       <section className="py-16 sm:py-20 bg-bg-site">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
@@ -67,7 +64,6 @@ export default function CareerPage() {
             </h2>
           </div>
 
-          {/* Grid Layout Perks */}
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {/* Benefit 1 */}
             <div className="relative p-6 bg-card-site rounded-xl border border-border-site/20 shadow-sm transition-all duration-300 hover:shadow-md hover:border-border-site/40">
@@ -150,7 +146,7 @@ export default function CareerPage() {
         </div>
       </section>
 
-      {/* Bagian Lowongan Kerja Aktif / Skenario Lowongan Kosong */}
+      {/* Bagian Lowongan Kerja Aktif */}
       <section className="py-12 sm:py-16 bg-bg-site border-t border-border-site/20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {jobs.length > 0 ? (
@@ -209,7 +205,6 @@ export default function CareerPage() {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-2.5 sm:items-center">
-                      {/* Tombol Lihat Detail */}
                       <button
                         onClick={() => setActivePoster(job.image)}
                         className="inline-flex w-full sm:w-auto items-center justify-center bg-bg-site border border-border-site/60 text-text-site font-bold py-2.5 px-5 rounded-lg text-sm hover:bg-card-site/80 transition-all duration-300 shadow-sm active:scale-95 cursor-pointer"
@@ -235,7 +230,6 @@ export default function CareerPage() {
                         Lihat Detail
                       </button>
 
-                      {/* Tombol Lamar Sekarang */}
                       <a
                         href={job.link}
                         target="_blank"
@@ -286,14 +280,12 @@ export default function CareerPage() {
                 Saat ini seluruh posisi di Marmara Cake telah terisi penuh.
               </h3>
 
-              {/* Paragraf Pendukung dengan Opacity Lembut */}
               <p className="mt-3 text-sm leading-relaxed text-text-site/70 max-w-md mx-auto">
                 Jangan berkecil hati! Anda tetap bisa mengirimkan CV terbaik
                 Anda langsung ke email resmi kami untuk peluang karir di masa
                 mendatang.
               </p>
 
-              {/* Tombol Kirim Email */}
               <div className="mt-8">
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=career@marmara.com&su=Spontan%20Application%20-%20Talent%20Pool%20Marmara&body=Halo%20Tim%20HRD%20Marmara%2C%0A%0ABersama%20dengan%20email%20ini%2C%20saya%20ingin%20mengirimkan%20CV%20saya%20untuk%20bergabung%20ke%20dalam%20database%20talenta%20Marmara.%20Berikut%20saya%20lampirkan%20CV%20terbaru%20saya.%0A%0ATerima%20kasih."
@@ -322,7 +314,6 @@ export default function CareerPage() {
         </div>
       </section>
 
-      {/* ================= MODAL LIGHTBOX POSTER DETAIL ================= */}
       {activePoster && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 transition-all duration-300"

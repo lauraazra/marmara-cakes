@@ -46,7 +46,7 @@ export default function FAQBox() {
     (item) => item.category === activeCategory,
   );
 
-  // === RENDER LOADING STATE ===
+  // loading state ===
   if (loading) {
     return (
       <div className="text-center py-12 text-sm text-text-site/70">
@@ -56,7 +56,6 @@ export default function FAQBox() {
     );
   }
 
-  // === RENDER ERROR STATE ===
   if (error) {
     return (
       <div className="text-center py-12 text-sm text-marmara-deep-pink font-semibold">
@@ -149,7 +148,6 @@ export default function FAQBox() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.25, ease: "easeInOut" }}
                     >
-                      {/* Kotak Jawaban (a) */}
                       <div className="px-5 pb-5 pt-1 border-t border-border-site/60 bg-card-site/40">
                         <p className="text-text-site text-sm sm:text-base leading-relaxed whitespace-pre-line">
                           {item.a}

@@ -7,7 +7,6 @@ export default function ArticleHeader({
 }) {
   return (
     <>
-      {/* Breadcrumb Navigation */}
       <nav className="text-xs font-bold text-text-site/40 tracking-wide uppercase mb-4 select-none">
         <span className="hover:text-marmara-gold transition-colors cursor-pointer">
           Home

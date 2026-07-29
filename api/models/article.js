@@ -62,7 +62,4 @@ const articleSchema = new mongoose.Schema(
   },
 );
 
-// ========================================================
-// MODEL EXPORT
-// ========================================================
 module.exports = mongoose.model("Article", articleSchema);
