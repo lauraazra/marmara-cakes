@@ -7,7 +7,6 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Cek token/status login admin yang tersimpan
     const adminSession = localStorage.getItem("marmara_admin_session");
     if (adminSession === "true") {
       setIsAuthenticated(true);
@@ -16,7 +15,6 @@ export function AuthProvider({ children }) {
   }, []);
 
   const login = (email, password) => {
-    // Membaca kredensial aman dari file .env Vite
     const envEmail = import.meta.env.VITE_ADMIN_EMAIL;
     const envPassword = import.meta.env.VITE_ADMIN_PASSWORD;
 
