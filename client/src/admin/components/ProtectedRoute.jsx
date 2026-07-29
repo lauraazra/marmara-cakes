@@ -13,7 +13,7 @@ export default function ProtectedRoute({ children }) {
     );
   }
 
-  // Gak perlu cek role lagi, kalau false langsung tendang ke gerbang login admin
+
   if (!isAuthenticated) {
     return <Navigate to="/admin/login" state={{ from: location }} replace />;
   }
