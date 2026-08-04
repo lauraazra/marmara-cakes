@@ -163,6 +163,37 @@ app.get("/api/faqs", async (req, res) => {
 });
 
 // Mara AI
+function tokenize(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s]/g, "")
+    .split(/\s+/)
+    .filter((word) => word.length >= 2);
+}
+
+function calculateTextSimilarity(textA, textB) {
+  const tokensA = tokenize(textA);
+  const tokensB = tokenize(textB);
+
+  const vocab = Array.from(new Set([...tokensA, ...tokensB]));
+
+  const vectorA = vocab.map((word) => tokensA.filter((w) => w === word).length);
+  const vectorB = vocab.map((word) => tokensB.filter((w) => w === word).length);
+
+  let dotProduct = 0;
+  let normA = 0;
+  let normB = 0;
+
+  for (let i = 0; i < vocab.length; i++) {
+    dotProduct += vectorA[i] * vectorB[i];
+    normA += vectorA[i] * vectorA[i];
+    normB += vectorB[i] * vectorB[i];
+  }
+
+  if (normA === 0 || normB === 0) return 0;
+  return dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));
+}
+
 app.post("/api/tanya-ai", async (req, res) => {
   try {
     const { question } = req.body;
@@ -172,14 +203,14 @@ app.post("/api/tanya-ai", async (req, res) => {
           "Mohon maaf, Anda belum memasukkan pertanyaan. Silakan ketikkan sesuatu ya.",
       });
 
-    // 1. Ambil Database
+    // Ambil Database
     const [products, articles, faqs] = await Promise.all([
       Product.find().select("name description basePrice variants").lean(),
       Article.find({ status: "published" }).select("title excerpt").lean(),
       FAQ.find().select("question answer").lean(),
     ]);
 
-    // 2. Olah Detail Produk Kue
+    // Olah Detail Produk Kue
     let infoProdukMarmara = "DAFTAR MENU & DETAIL PRODUK KUE:\n";
     products.forEach((prod, index) => {
       infoProdukMarmara += `${index + 1}. Nama Kue: ${prod.name || "Menu Marmara"}\n`;
@@ -200,21 +231,48 @@ app.post("/api/tanya-ai", async (req, res) => {
       infoProdukMarmara += "\n";
     });
 
-    // 3. Olah Data Artikel
+    // Olah Data Artikel
     let infoBlogMarmara = "ARTIKEL BLOG & INFORMASI MARMARA CAKES:\n";
     articles.forEach((art, index) => {
       infoBlogMarmara += `${index + 1}. Judul Tulisan: ${art.title}\n`;
       infoBlogMarmara += `   Ringkasan Info: ${art.excerpt || "Tidak ada ringkasan."}\n\n`;
     });
 
-    // 4. Olah Data FAQ
+    // Olah Data FAQ
     let infoFaqMarmara = "PERTANYAAN UMUM (FAQ) & KEBIJAKAN TOKO:\n";
     faqs.forEach((faq, index) => {
       infoFaqMarmara += `${index + 1}. Pertanyaan: ${faq.question}\n`;
       infoFaqMarmara += `   Jawaban Resmi: ${faq.answer}\n\n`;
     });
 
-    // 5. AI Instructions
+    // HARNESS & COSINE SIMILARITY CHECK (LOCAL VOCAB VECTOR)
+    const keywordsUmum =
+      "promo diskon potongan harga voucher murah event penawaran spesial cashback hemat gratis ongkir order beli pesan lokasi alamat jam buka cabang";
+    const knowledgeBaseText = `${keywordsUmum}\nMarmara Cakes toko kue bakery dessert Bandung Tasikmalaya Garut Ciamis Banjar Majenang GoFood GrabFood ShopeeFood order whatsapp admin mima\n${infoProdukMarmara}\n${infoBlogMarmara}\n${infoFaqMarmara}`;
+
+    const kbLines = knowledgeBaseText
+      .split("\n")
+      .map((line) => line.trim())
+      .filter((line) => line.length > 0);
+
+    let maxSimilarityScore = 0;
+    for (const line of kbLines) {
+      const score = calculateTextSimilarity(question, line);
+      if (score > maxSimilarityScore) {
+        maxSimilarityScore = score;
+      }
+    }
+
+    const SIMILARITY_THRESHOLD = 0.05;
+
+    if (maxSimilarityScore < SIMILARITY_THRESHOLD) {
+      return res.json({
+        reply:
+          "Halo Kakak! Mohon maaf, Mara hanya dapat membantu menjawab pertanyaan seputar produk, layanan, dan informasi resmi dari Marmara Cakes. Ada yang bisa Mara bantu terkait pesanan kue Kakak hari ini?",
+      });
+    }
+
+    // AI Instructions
     const systemInstruction = `Kamu adalah "Mara AI", asisten digital dan customer care resmi untuk "Marmara Cakes". Karakter kamu adalah sosok yang sangat ramah, sopan, profesional, namun tetap membumi (humble) serta tulus dalam melayani pelanggan.
 
 Tugas utama kamu adalah menjawab segala pertanyaan pelanggan tentang Marmara Cakes secara akurat berdasarkan data asli toko yang disediakan di bawah ini.
@@ -248,7 +306,7 @@ ATURAN WAJIB MARA AI DALAM MENJAWAB:
 5. Jika pelanggan bertanya tentang ketahanan kue, status halal, tata cara refund, pengiriman, pisau/lilin, atau pengajuan kemitraan, baca dan jawab secara eksklusif mengikuti data resmi PERTANYAAN UMUM (FAQ) & KEBIJAKAN TOKO.
 6. Jika pertanyaan melenceng jauh di luar konteks toko kue Marmara Cakes, tolaklah dengan bahasa yang sangat halus, sopan, dan arahkan kembali mereka dengan menawarkan bantuan seputar produk kue Marmara.`;
 
-    // 6. PANGGIL MODEL MENGGUNAKAN SDK @google/generative-ai
+    // PANGGIL MODEL
     const model = genAI.getGenerativeModel({
       model: "gemini-2.5-flash",
       systemInstruction: systemInstruction,
